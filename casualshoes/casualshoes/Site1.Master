@@ -8,12 +8,64 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <h1>Welcome to CasualShoes.com!</h1>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+        <div>
+            <header runat="server">
+                <h2>[casualshoes Logo]</h2>
+                <div id="header-top">
+                    <figure>
+                        <img src="img_shippingBox.png" />
+                        <figcaption>Fri frakt och retur!</figcaption>
+                    </figure>
+                    <div>
+                        <asp:TextBox ID="SearchBoxID" placeholder="Search CasualShoes.com" runat="server"></asp:TextBox>
+                    </div>
+                    <figure>
+                        <img src="img_circle.png" />
+                        <figcaption><a href="#Contact.aspx">Kontakta Kundservice</a></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img_user.png" />
+                        <figcaption><a href="#Login.aspx">Logga In</a></figcaption>
+                    </figure>
+                </div>
+                <div id="header-bottom-nav">
+                    <ul>
+                        <li><a href="#">HEM</a></li>
+                        <li><a href="#">SNEAKERS</a></li>
+                        <li><a href="#">SANDALER</a></li>
+                        <li><a href="#">KÄNGOR & BOOTS</a></li>
+                        <li><a href="#">LÅGSKOR</a></li>
+                    </ul>
+                    <figure>
+                        <img src="img_bag.png" />
+                        <figcaption><a href="#Checkout.aspx">Varukorg</a></figcaption>
+                    </figure>
+                </div>
+            </header>
 
-        </asp:ContentPlaceHolder>
-    </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+            <footer runat="server">
+                <article id="footer-left-nav">
+                    <ul>
+                        <li><a>OM OSS</a></li>
+                        <li><a>VILLKOR</a></li>
+                        <li><a>KUNDSERVICE</a></li>
+                    </ul>
+                </article>
+                <article id="footer-right-socialmedia">
+                    <a href="#">[Instagram icon</a>
+                    <a href="#">[facebook icon</a>
+                </article>
+                <article id="footer-bottom-info">
+                    &copy 2016 CasualShoes.com 
+                </article>
+
+            </footer>
+        </div>
     </form>
 </body>
 </html>
