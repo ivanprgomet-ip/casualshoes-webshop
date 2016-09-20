@@ -54,7 +54,7 @@ header{
     }
     #header-bottom-nav{
         display:flex;
-        align-items:baseline;
+        align-items: flex-end;
         justify-content: space-between;
         padding:15px;
 
@@ -63,6 +63,8 @@ header{
     }
     #header-bottom-nav ul{
         display:flex;
+        margin-top: 0;
+        margin-bottom: 0;
         /*justify-content:space-around;*/
         /*background-color:lightgreen;*/
     }
@@ -105,7 +107,7 @@ header{
         color: #c07a0e;
     }
 
-#header-bottom-nav #cart-container a{
+#header-bottom-nav a{
     text-decoration:none;
     font: 18px;
     color: #504332;
