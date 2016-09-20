@@ -3,11 +3,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
 
     <article id="HomeBannerId">
-        <h2>Welcome to CasualShoes.com, your nr.1 store for shoes!</h2>
-        <img src="mainBanner.jpg" alt="main banner of site" />
+        <h1>Welcome to CasualShoes.com, your nr.1 store for shoes!</h1>
+        <img src="../images/jpeg/mainbanner.jpg" alt="main banner of site" />
     </article>
     <article id="PopularProductsId">
-        <h3>Popular Products</h3>
+        <h2>Popular Products</h2>
         <div id="popularProductsContainerId">
             <img src="../images/png/boot.png" />
             <img src="../images/png/boot.png" />
@@ -16,7 +16,7 @@
         </div>
     </article>
     <article id="BrandsId">
-        <h3>Associated Brands</h3>
+        <h2>Associated Brands</h2>
         <div id="associatedBrandsId">
             <img src="../images/jpeg/brands.jpg" />
         </div>

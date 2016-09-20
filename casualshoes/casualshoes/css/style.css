@@ -1,37 +1,52 @@
 ﻿body {
     background-color: #f5f0e9;
-
     font: normal, 13px, Tahoma,Arial, Helvetica, sans-serif;
     color: #44433b;
-
-
 }
 
-h1
-{
-   color:#593b0d;
-   font-size: 30px;
+h1 {
+    color: #593b0d;
+    font-size: 30px;
 }
 
-/* top menu -- login search*/
-.menu1Line
-{
-   font: 13px;
-   color:#484644;
+/*HEADER*/
+#header-top-nav a{
+    text-decoration: none;
+    font: 13px;
+    color: #484644;
 }
-/* top main menu kategorier*/
-.menu2Line
-{
-   font: bold, 18px;
-   color:#504332;
+#header-bottom-nav ul {
+    list-style-type: none;
 }
-.menu2line.hover
-{
-   color:#c07a0e;
+#header-bottom-nav ul a{
+    font: bold, 18px;
+    color: #504332;
+    text-decoration:none;
 }
-/*varukorg*/
-.menuVarukorg
-{
-   font: 18px;
-   color:#504332;
+    #header-bottom-nav ul a:hover {
+        color: #c07a0e;
+    }
+
+#header-bottom-nav #cart-container a{
+    text-decoration:none;
+    font: 18px;
+    color: #504332;
+}
+
+
+/*FOOTER*/
+footer{
+    background-color: #45433b;
+    
+}
+#footer ul{
+    list-style-type:none;
+}
+#footer-left-nav a{
+    text-decoration:none;
+    color: #ffffff;
+}
+#footer-bottom-info{
+    color: #adacaa;
+    font-size: 13px;
 }

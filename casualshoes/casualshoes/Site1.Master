@@ -12,7 +12,7 @@
         <div>
             <header runat="server">
                 <img src="../images/png/casualshoes.png" />
-                <div id="header-top">
+                <div id="header-top-nav">
                     <figure>
                         <img src="../images/png/shippingbox.png" />
                         <figcaption>Fri frakt och retur!</figcaption>
@@ -37,9 +37,9 @@
                         <li><a href="Boots.aspx">KÄNGOR & BOOTS</a></li>
                         <li><a href="LowShoes.aspx">LÅGSKOR</a></li>
                     </ul>
-                    <figure>
+                    <figure id="cart-container">
                          <img src="../images/png/shoppingcrart.png" />
-                        <figcaption><a href="Cart.aspx">Varukorg</a></figcaption>
+                        <figcaption><a href="Cart.aspx">VARUKORG</a></figcaption>
                     </figure>
                 </div>
             </header>
