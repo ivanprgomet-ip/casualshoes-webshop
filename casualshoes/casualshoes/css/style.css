@@ -1,16 +1,27 @@
-﻿body {
+﻿/*html{
+    background-color:#ffffff;
+}*/
+body {
     background-color: #f5f0e9;
     font: normal, 13px, Tahoma,Arial, Helvetica, sans-serif;
     color: #44433b;
 
-    width:1200px;
+    width:940px;
     margin-left:auto;
     margin-right:auto;
+    margin-bottom:0;
+    margin-top:25px;
+
+    padding: 25px 0 0 0;
 }
 
 h1 {
     color: #593b0d;
     font-size: 30px;
+}
+.header-banner{
+    display:flex;
+    justify-content:center;
 }
 
 /*HEADER*/
@@ -36,22 +47,36 @@ header{
     #header-top-nav{
         display:flex;
         align-items:baseline;
+        justify-content: space-between;
+        padding:15px;
+
+        border-left: 1px solid rgba(80, 67, 50, 0.20);
     }
     #header-bottom-nav{
         display:flex;
         align-items:baseline;
+        justify-content: space-between;
+        padding:15px;
+
+        border-top: 1px solid rgba(80, 67, 50, 0.20);
+        border-left: 1px solid rgba(80, 67, 50, 0.20);
     }
     #header-bottom-nav ul{
         display:flex;
         /*justify-content:space-around;*/
         /*background-color:lightgreen;*/
     }
+    #header-bottom-nav ul a{
+        font-weight:bold;
+    }
     #header-bottom-nav ul li{
-        padding:0 8px 0 8px;
+        padding:0 12px 0 12px;
     }
     figure{
         display:flex;
-        align-items:baseline;
+        align-items: flex-end;
+
+        margin:0;
     }
     .icon-text{
         margin-left:8px;
@@ -92,20 +117,47 @@ footer{
     background-color: #45433b;
     
 }
+#footer-top-section{
+    padding:15px 0;
+    display:flex;
+    justify-content:space-around;
+}
+#footer-left-nav ul{
+    display:flex;
+}
+#footer-right-socialmedia{
+    display:flex;
+    align-items:center;
+}
+#footer-right-socialmedia a{
+    padding:15px;
+    color:#ffffff;
+}
+
+
+
 #footer ul{
     list-style-type:none;
 }
 #footer-left-nav a{
     text-decoration:none;
+    padding:15px;
     color: #ffffff;
 }
 #footer-bottom-info{
     color: #adacaa;
     font-size: 13px;
+    display:flex;
+    justify-content:center;
+
+    padding:15px 0;
 }
 
 
 /*HOME.ASPX*/
-#PopularProductsId{
-    background-color:#ffffff;
+#popularProductsContainerId{
+     background-color:#ffffff;
+     display: flex;
+    justify-content: space-around;
+    padding:25px 0;
 }

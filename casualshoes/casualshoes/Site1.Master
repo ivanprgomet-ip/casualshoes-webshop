@@ -14,7 +14,6 @@
                 <figure id="casualshoes-logo">
                     <img src="../images/png/casualshoes.png" />
                 </figure>
-
                 <div id="header-menus">
                     <div id="header-top-nav">
                         <figure>
@@ -56,23 +55,28 @@
 
 
             <footer runat="server">
-                <article id="footer-left-nav">
-                    <ul>
-                        <li><a href="AboutUs.aspx">OM OSS</a></li>
-                        <li><a href="Terms.aspx">VILLKOR</a></li>
-                        <li><a href="Contact.aspx">KONTAKTA OSS</a></li>
-                    </ul>
-                </article>
-                <article id="footer-right-socialmedia">
-                    <a href="www.facebook.com">
-                        <img src="../images/png/facebook.png" /></a>
-                    <a href="www.instagram.com">
-                        <img src="../images/png/instagram.png" /></a>
-                </article>
+                <section id="footer-top-section">
+                    <article id="footer-left-nav">
+                        <ul>
+                            <li><a href="AboutUs.aspx">OM OSS</a></li>
+                            <li><a href="Terms.aspx">VILLKOR</a></li>
+                            <li><a href="Contact.aspx">KONTAKTA OSS</a></li>
+                        </ul>
+                    </article>
+                    <article id="footer-right-socialmedia">
+                        <figure>
+                            <img src="../images/png/facebook.png" />
+                        </figure>
+                        <a href="www.facebook.com">FACEBOOK</a>
+                        <figure>
+                            <img src="../images/png/instagram.png" />
+                        </figure>
+                        <a href="www.instagram.com">INSTAGRAM</a>
+                    </article>
+                </section>
                 <article id="footer-bottom-info">
                     &copy 2016 CasualShoes.com 
                 </article>
-
             </footer>
         </div>
     </form>

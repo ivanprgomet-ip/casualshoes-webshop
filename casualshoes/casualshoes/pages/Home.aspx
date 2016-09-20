@@ -6,7 +6,7 @@
         <img src="../images/jpeg/mainbanner.jpg" alt="main banner of site" />
     </article>
     <article id="PopularProductsId">
-        <h2>Mest Populära</h2>
+        <h1 class="header-banner">Mest Populära</h1>
         <div id="popularProductsContainerId">
             <img src="../images/png/boot.png" />
             <img src="../images/png/boot.png" />
@@ -15,7 +15,7 @@
         </div>
     </article>
     <article id="BrandsId">
-        <h2>Varumärken</h2>
+        <h1 class="header-banner">Varumärken</h1>
         <div id="associatedBrandsId">
             <img src="../images/jpeg/brands.jpg" />
         </div>
