@@ -5,26 +5,27 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Home</title>
+    <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
             <header runat="server">
-                <h2>[casualshoes Logo]</h2>
+                <img src="../images/png/casualshoes.png" />
                 <div id="header-top">
                     <figure>
-                        <img src="img_shippingBox.png" />
+                        <img src="../images/png/shippingbox.png" />
                         <figcaption>Fri frakt och retur!</figcaption>
                     </figure>
                     <div>
                         <asp:TextBox ID="SearchBoxID" placeholder="Search CasualShoes.com" runat="server"></asp:TextBox>
                     </div>
                     <figure>
-                        <img src="img_circle.png" />
+                        <img src="../images/png/service.png" />
                         <figcaption><a href="mailto:casualshoescustomerservice.com">Kontakta Kundservice</a></figcaption>
                     </figure>
                     <figure>
-                        <img src="img_user.png" />
+                        <img src="../images/png/user.png" />
                         <figcaption><a href="Login.aspx">Logga In</a></figcaption>
                     </figure>
                 </div>
@@ -37,7 +38,7 @@
                         <li><a href="LowShoes.aspx">LÅGSKOR</a></li>
                     </ul>
                     <figure>
-                        <img src="img_bag.png" />
+                         <img src="../images/png/shoppingcrart.png" />
                         <figcaption><a href="Cart.aspx">Varukorg</a></figcaption>
                     </figure>
                 </div>
@@ -57,8 +58,8 @@
                     </ul>
                 </article>
                 <article id="footer-right-socialmedia">
-                    <a href="#">[Instagram icon</a>
-                    <a href="#">[facebook icon</a>
+                    <a href="www.facebook.com"><img src="../images/png/facebook.png" /></a>
+                    <a href="www.instagram.com"><img src="../images/png/instagram.png" /></a>
                 </article>
                 <article id="footer-bottom-info">
                     &copy 2016 CasualShoes.com 

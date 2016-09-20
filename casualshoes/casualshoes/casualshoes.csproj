@@ -95,6 +95,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\style.css" />
+    <Content Include="images\jpeg\brands.jpg" />
+    <Content Include="images\jpeg\mainbanner.jpg" />
+    <Content Include="images\png\boot.png" />
+    <Content Include="images\png\casualshoes.png" />
+    <Content Include="images\png\facebook.png" />
+    <Content Include="images\png\instagram.png" />
+    <Content Include="images\png\service.png" />
+    <Content Include="images\png\shippingbox.png" />
+    <Content Include="images\png\shoppingcrart.png" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -9,23 +9,16 @@
     <article id="PopularProductsId">
         <h3>Popular Products</h3>
         <div id="popularProductsContainerId">
-            <img src="mostPopular1.jpg" />
-            <img src="mostPopular2.jpg" />
-            <img src="mostPopular3.jpg" />
-            <img src="mostPopular4.jpg" />
+            <img src="../images/png/boot.png" />
+            <img src="../images/png/boot.png" />
+            <img src="../images/png/boot.png" />
+            <img src="../images/png/boot.png" />
         </div>
     </article>
     <article id="BrandsId">
         <h3>Associated Brands</h3>
         <div id="associatedBrandsId">
-            <img src="brand1.jpg" />
-            <img src="brand2.jpg" />
-            <img src="brand3.jpg" />
-            <img src="brand4.jpg" />
-            <img src="brand5.jpg" />
-            <img src="brand6.jpg" />
-            <img src="brand7.jpg" />
-            <img src="brand8.jpg" />
+            <img src="../images/jpeg/brands.jpg" />
         </div>
     </article>
 </asp:Content>
