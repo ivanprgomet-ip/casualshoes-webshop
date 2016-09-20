@@ -30,11 +30,11 @@
                 </div>
                 <div id="header-bottom-nav">
                     <ul>
-                        <li><a href="#">HEM</a></li>
-                        <li><a href="#">SNEAKERS</a></li>
-                        <li><a href="#">SANDALER</a></li>
-                        <li><a href="#">KÄNGOR & BOOTS</a></li>
-                        <li><a href="#">LÅGSKOR</a></li>
+                        <li><a href="Home.aspx">HEM</a></li>
+                        <li><a href="Sneakers.aspx">SNEAKERS</a></li>
+                        <li><a href="Sandals.aspx">SANDALER</a></li>
+                        <li><a href="Boots.aspx">KÄNGOR & BOOTS</a></li>
+                        <li><a href="LowShoes.aspx">LÅGSKOR</a></li>
                     </ul>
                     <figure>
                         <img src="img_bag.png" />
@@ -51,9 +51,9 @@
             <footer runat="server">
                 <article id="footer-left-nav">
                     <ul>
-                        <li><a>OM OSS</a></li>
-                        <li><a>VILLKOR</a></li>
-                        <li><a>KUNDSERVICE</a></li>
+                        <li><a href="AboutUs.aspx">OM OSS</a></li>
+                        <li><a href="Terms.aspx">VILLKOR</a></li>
+                        <li><a href="CustomerService.aspx">KUNDSERVICE</a></li>
                     </ul>
                 </article>
                 <article id="footer-right-socialmedia">

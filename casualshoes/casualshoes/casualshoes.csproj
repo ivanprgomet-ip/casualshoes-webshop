@@ -94,11 +94,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\style.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Site1.Master" />
+    <Content Include="pages\Sneakers.aspx" />
+    <Content Include="pages\Sandals.aspx" />
+    <Content Include="pages\Boots.aspx" />
+    <Content Include="pages\LowShoes.aspx" />
+    <Content Include="pages\Terms.aspx" />
+    <Content Include="pages\CustomerService.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -135,6 +142,48 @@
     </Compile>
     <Compile Include="pages\AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Sneakers.aspx.cs">
+      <DependentUpon>Sneakers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Sneakers.aspx.designer.cs">
+      <DependentUpon>Sneakers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Sandals.aspx.cs">
+      <DependentUpon>Sandals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Sandals.aspx.designer.cs">
+      <DependentUpon>Sandals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Boots.aspx.cs">
+      <DependentUpon>Boots.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Boots.aspx.designer.cs">
+      <DependentUpon>Boots.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\LowShoes.aspx.cs">
+      <DependentUpon>LowShoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\LowShoes.aspx.designer.cs">
+      <DependentUpon>LowShoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Terms.aspx.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Terms.aspx.designer.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\CustomerService.aspx.cs">
+      <DependentUpon>CustomerService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\CustomerService.aspx.designer.cs">
+      <DependentUpon>CustomerService.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
