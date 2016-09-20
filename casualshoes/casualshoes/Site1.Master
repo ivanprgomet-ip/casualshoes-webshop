@@ -21,11 +21,11 @@
                     </div>
                     <figure>
                         <img src="img_circle.png" />
-                        <figcaption><a href="#Contact.aspx">Kontakta Kundservice</a></figcaption>
+                        <figcaption><a href="mailto:casualshoescustomerservice.com">Kontakta Kundservice</a></figcaption>
                     </figure>
                     <figure>
                         <img src="img_user.png" />
-                        <figcaption><a href="#Login.aspx">Logga In</a></figcaption>
+                        <figcaption><a href="Login.aspx">Logga In</a></figcaption>
                     </figure>
                 </div>
                 <div id="header-bottom-nav">
@@ -38,7 +38,7 @@
                     </ul>
                     <figure>
                         <img src="img_bag.png" />
-                        <figcaption><a href="#Checkout.aspx">Varukorg</a></figcaption>
+                        <figcaption><a href="Cart.aspx">Varukorg</a></figcaption>
                     </figure>
                 </div>
             </header>
@@ -53,7 +53,7 @@
                     <ul>
                         <li><a href="AboutUs.aspx">OM OSS</a></li>
                         <li><a href="Terms.aspx">VILLKOR</a></li>
-                        <li><a href="CustomerService.aspx">KUNDSERVICE</a></li>
+                        <li><a href="Contact.aspx">KONTAKTA OSS</a></li>
                     </ul>
                 </article>
                 <article id="footer-right-socialmedia">

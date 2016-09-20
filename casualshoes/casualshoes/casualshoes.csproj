@@ -105,7 +105,9 @@
     <Content Include="pages\Boots.aspx" />
     <Content Include="pages\LowShoes.aspx" />
     <Content Include="pages\Terms.aspx" />
-    <Content Include="pages\CustomerService.aspx" />
+    <Content Include="pages\Contact.aspx" />
+    <Content Include="pages\Cart.aspx" />
+    <Content Include="pages\Login.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -178,12 +180,26 @@
     <Compile Include="pages\Terms.aspx.designer.cs">
       <DependentUpon>Terms.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\CustomerService.aspx.cs">
-      <DependentUpon>CustomerService.aspx</DependentUpon>
+    <Compile Include="pages\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\CustomerService.aspx.designer.cs">
-      <DependentUpon>CustomerService.aspx</DependentUpon>
+    <Compile Include="pages\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
