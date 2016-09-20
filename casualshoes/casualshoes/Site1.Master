@@ -11,37 +11,43 @@
     <form id="form1" runat="server">
         <div>
             <header runat="server">
-                <img src="../images/png/casualshoes.png" />
-                <div id="header-top-nav">
-                    <figure>
-                        <img src="../images/png/shippingbox.png" />
-                        <figcaption>Fri frakt och retur!</figcaption>
-                    </figure>
-                    <div>
-                        <asp:TextBox ID="SearchBoxID" placeholder="Search CasualShoes.com" runat="server"></asp:TextBox>
+                <figure id="casualshoes-logo">
+                    <img src="../images/png/casualshoes.png" />
+                </figure>
+
+                <div id="header-menus">
+                    <div id="header-top-nav">
+                        <figure>
+                            <img src="../images/png/shippingbox.png" />
+                            <figcaption class="icon-text">Fri frakt och retur!</figcaption>
+                        </figure>
+                        <div>
+                            <asp:TextBox ID="SearchBoxID" placeholder="Search CasualShoes.com" runat="server"></asp:TextBox>
+                        </div>
+                        <figure>
+                            <img src="../images/png/service.png" />
+                            <figcaption class="icon-text"><a href="mailto:casualshoescustomerservice.com">Kontakta Kundservice</a></figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../images/png/user.png" />
+                            <figcaption class="icon-text"><a href="Login.aspx">Logga In</a></figcaption>
+                        </figure>
                     </div>
-                    <figure>
-                        <img src="../images/png/service.png" />
-                        <figcaption><a href="mailto:casualshoescustomerservice.com">Kontakta Kundservice</a></figcaption>
-                    </figure>
-                    <figure>
-                        <img src="../images/png/user.png" />
-                        <figcaption><a href="Login.aspx">Logga In</a></figcaption>
-                    </figure>
+                    <div id="header-bottom-nav">
+                        <ul>
+                            <li><a href="Home.aspx">HEM</a></li>
+                            <li><a href="Sneakers.aspx">SNEAKERS</a></li>
+                            <li><a href="Sandals.aspx">SANDALER</a></li>
+                            <li><a href="Boots.aspx">KÄNGOR & BOOTS</a></li>
+                            <li><a href="LowShoes.aspx">LÅGSKOR</a></li>
+                        </ul>
+                        <figure>
+                            <img src="../images/png/shoppingcrart.png" />
+                            <figcaption class="icon-text"><a href="Cart.aspx">VARUKORG</a></figcaption>
+                        </figure>
+                    </div>
                 </div>
-                <div id="header-bottom-nav">
-                    <ul>
-                        <li><a href="Home.aspx">HEM</a></li>
-                        <li><a href="Sneakers.aspx">SNEAKERS</a></li>
-                        <li><a href="Sandals.aspx">SANDALER</a></li>
-                        <li><a href="Boots.aspx">KÄNGOR & BOOTS</a></li>
-                        <li><a href="LowShoes.aspx">LÅGSKOR</a></li>
-                    </ul>
-                    <figure id="cart-container">
-                         <img src="../images/png/shoppingcrart.png" />
-                        <figcaption><a href="Cart.aspx">VARUKORG</a></figcaption>
-                    </figure>
-                </div>
+
             </header>
 
 
@@ -58,8 +64,10 @@
                     </ul>
                 </article>
                 <article id="footer-right-socialmedia">
-                    <a href="www.facebook.com"><img src="../images/png/facebook.png" /></a>
-                    <a href="www.instagram.com"><img src="../images/png/instagram.png" /></a>
+                    <a href="www.facebook.com">
+                        <img src="../images/png/facebook.png" /></a>
+                    <a href="www.instagram.com">
+                        <img src="../images/png/instagram.png" /></a>
                 </article>
                 <article id="footer-bottom-info">
                     &copy 2016 CasualShoes.com 
