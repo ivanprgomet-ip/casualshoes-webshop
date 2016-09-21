@@ -1,7 +1,4 @@
-﻿/*html{
-    background-color:#ffffff;
-}*/
-body {
+﻿body {
     background-color: #f5f0e9;
     font: normal, 13px, Tahoma,Arial, Helvetica, sans-serif;
     color: #44433b;
@@ -83,18 +80,6 @@ header{
     .icon-text{
         margin-left:8px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
 #header-bottom-nav ul {
     list-style-type: none;
 }
@@ -106,13 +91,11 @@ header{
     #header-bottom-nav ul a:hover {
         color: #c07a0e;
     }
-
 #header-bottom-nav a{
     text-decoration:none;
     font: 18px;
     color: #504332;
 }
-
 
 /*FOOTER*/
 footer{
@@ -135,8 +118,6 @@ footer{
     padding:15px;
     color:#ffffff;
 }
-
-
 
 #footer ul{
     list-style-type:none;
@@ -163,7 +144,6 @@ footer{
     justify-content: space-around;
     padding:25px 0;
 }
-
 #popularProductsContainerId figure{
     display:flex;
     flex-direction:column;
