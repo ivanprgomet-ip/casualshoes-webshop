@@ -1,17 +1,44 @@
 ﻿<%@ Page Title="Hem" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="casualshoes.WebForm1" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
-
     <article id="HomeBannerId">
         <img src="../images/jpeg/mainbanner.jpg" alt="main banner of site" />
     </article>
     <article id="PopularProductsId">
         <h1 class="header-banner">Mest Populära</h1>
         <div id="popularProductsContainerId">
-            <img src="../images/png/boot.png" />
-            <img src="../images/png/boot.png" />
-            <img src="../images/png/boot.png" />
-            <img src="../images/png/boot.png" />
+            <figure>
+                <img src="../images/png/boot.png" />
+                <figcaption>
+                    <span>Birkenstock</span>
+                    <span>Model 78</span>
+                    <span>699 Sek</span>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../images/png/boot.png" />
+                 <figcaption>
+                    <span>Birkenstock</span>
+                    <span>Model 78</span>
+                    <span>699 Sek</span>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../images/png/boot.png" />
+                 <figcaption>
+                    <span>Birkenstock</span>
+                    <span>Model 78</span>
+                    <span>699 Sek</span>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../images/png/boot.png" />
+                 <figcaption>
+                    <span>Birkenstock</span>
+                    <span>Model 78</span>
+                    <span>699 Sek</span>
+                </figcaption>
+            </figure>
         </div>
     </article>
     <article id="BrandsId">

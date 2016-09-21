@@ -163,3 +163,18 @@ footer{
     justify-content: space-around;
     padding:25px 0;
 }
+
+#popularProductsContainerId figure{
+    display:flex;
+    flex-direction:column;
+}
+#popularProductsContainerId figure figcaption{
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+    /*align-items:center;*/
+}
+#popularProductsContainerId figure figcaption span{
+    margin-left: 15px;
+    color: #593b0d;
+}
