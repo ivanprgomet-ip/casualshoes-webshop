@@ -175,11 +175,17 @@ footer{
     width: 100%;
     /*align-items:center;*/
 }
+#popularProductsContainerId a{
+    text-decoration:none;
+}
 #popularProductsContainerId figure figcaption span{
     margin-left: 15px;
     color: #593b0d;
 }
 #popularProductsContainerId a:hover figure{
-    box-sizing:padding-box;
-    border:1px solid #593b0d;
+    /*box-sizing:padding-box;*/
+    border:1px solid rgba(192, 122, 14, 0.20);
+}
+#popularProductsContainerId a:hover span{
+    color: #c07a0e;
 }
