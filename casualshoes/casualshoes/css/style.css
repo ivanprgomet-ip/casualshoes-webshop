@@ -167,6 +167,7 @@ footer{
 #popularProductsContainerId figure{
     display:flex;
     flex-direction:column;
+    border:1px solid rgba(0, 0, 0, 0.00);
 }
 #popularProductsContainerId figure figcaption{
     display:flex;
@@ -177,4 +178,8 @@ footer{
 #popularProductsContainerId figure figcaption span{
     margin-left: 15px;
     color: #593b0d;
+}
+#popularProductsContainerId a:hover figure{
+    box-sizing:padding-box;
+    border:1px solid #593b0d;
 }

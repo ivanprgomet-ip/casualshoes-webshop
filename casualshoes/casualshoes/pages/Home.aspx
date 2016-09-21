@@ -7,38 +7,47 @@
     <article id="PopularProductsId">
         <h1 class="header-banner">Mest Populära</h1>
         <div id="popularProductsContainerId">
-            <figure>
-                <img src="../images/png/boot.png" />
-                <figcaption>
-                    <span>Birkenstock</span>
-                    <span>Model 78</span>
-                    <span>699 Sek</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="../images/png/boot.png" />
-                 <figcaption>
-                    <span>Birkenstock</span>
-                    <span>Model 78</span>
-                    <span>699 Sek</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="../images/png/boot.png" />
-                 <figcaption>
-                    <span>Birkenstock</span>
-                    <span>Model 78</span>
-                    <span>699 Sek</span>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="../images/png/boot.png" />
-                 <figcaption>
-                    <span>Birkenstock</span>
-                    <span>Model 78</span>
-                    <span>699 Sek</span>
-                </figcaption>
-            </figure>
+
+            <a href="Boots.aspx">
+                <figure>
+                    <img src="../images/png/boot.png" />
+                    <figcaption>
+                        <span>Birkenstock</span>
+                        <span>Model 78</span>
+                        <span>699 Sek</span>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="Boots.aspx">
+                <figure>
+                    <img src="../images/png/boot.png" />
+                    <figcaption>
+                        <span>Birkenstock</span>
+                        <span>Model 78</span>
+                        <span>699 Sek</span>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="Boots.aspx">
+                <figure>
+                    <img src="../images/png/boot.png" />
+                    <figcaption>
+                        <span>Birkenstock</span>
+                        <span>Model 78</span>
+                        <span>699 Sek</span>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="Boots.aspx">
+                <figure>
+                    <img src="../images/png/boot.png" />
+                    <figcaption>
+                        <span>Birkenstock</span>
+                        <span>Model 78</span>
+                        <span>699 Sek</span>
+                    </figcaption>
+                </figure>
+            </a>
         </div>
     </article>
     <article id="BrandsId">
