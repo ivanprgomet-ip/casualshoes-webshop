@@ -217,6 +217,7 @@ footer{
         font-size:14px;
         padding: 7px 10% 7px 8px;
         border:none;
+        cursor:pointer;
         background-color:lightgreen;
 }
 #product-details-specs-section div{
