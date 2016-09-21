@@ -8,9 +8,9 @@
         <h1 class="header-banner">Mest Populära</h1>
         <div id="popularProductsContainerId">
 
-            <a href="Boots.aspx">
+            <a href="ProductDetails.aspx">
                 <figure>
-                    <img src="../images/png/boot.png" />
+                    <img src="../images/products/boot.png" />
                     <figcaption>
                         <span>Birkenstock</span>
                         <span>Model 78</span>
@@ -18,9 +18,9 @@
                     </figcaption>
                 </figure>
             </a>
-            <a href="Boots.aspx">
+            <a href="ProductDetails.aspx">
                 <figure>
-                    <img src="../images/png/boot.png" />
+                    <img src="../images/products/boot.png" />
                     <figcaption>
                         <span>Birkenstock</span>
                         <span>Model 78</span>
@@ -28,9 +28,9 @@
                     </figcaption>
                 </figure>
             </a>
-            <a href="Boots.aspx">
+          <a href="ProductDetails.aspx">
                 <figure>
-                    <img src="../images/png/boot.png" />
+                    <img src="../images/products/boot.png" />
                     <figcaption>
                         <span>Birkenstock</span>
                         <span>Model 78</span>
@@ -38,9 +38,9 @@
                     </figcaption>
                 </figure>
             </a>
-            <a href="Boots.aspx">
+            <a href="ProductDetails.aspx">
                 <figure>
-                    <img src="../images/png/boot.png" />
+                    <img src="../images/products/boot.png" />
                     <figcaption>
                         <span>Birkenstock</span>
                         <span>Model 78</span>
