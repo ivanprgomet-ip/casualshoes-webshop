@@ -27,10 +27,6 @@ h1 {
     font: 13px;
     color: #484644;
 }
-
-
-
-
 header{
     display:flex;
     justify-content:space-between;
@@ -168,4 +164,68 @@ footer{
 }
 #popularProductsContainerId a:hover span{
     color: #c07a0e;
+}
+
+/*PRODUCTDETAILS.ASPX*/
+#product-details-container{
+    display:flex;
+}
+.adaptable-footer{
+    min-height:60vh; /*todo: fix this solution*/
+}
+#product-details-container figure{
+    align-items: flex-start;
+}
+.product-details-img-small{
+    width:100px;
+    height:auto;
+
+    padding-bottom:15px;
+}
+#product-details-img-large{
+    width:500px;
+
+    padding-left:15px;
+}
+#product-details-images-section{
+    display:flex;
+}
+#product-details-images-section aside{
+    display:flex;
+    flex-direction:column;
+}
+#product-details-wrapper{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+#product-details-specs-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#product-details-specs-section select{
+        width: 277px;
+        height:37px;
+        letter-spacing:.1em;
+        border: 2px solid #000;
+        font-size:14px;
+        padding: 7px 10% 7px 8px;
+        
+}
+#product-details-specs-section input[type=submit]{
+        width: 277px;
+        height:37px;
+        letter-spacing:.1em;
+        font-size:14px;
+        padding: 7px 10% 7px 8px;
+        border:none;
+        cursor:pointer; 
+        background-color:lightgreen;
+}
+#product-details-specs-section div{
+    margin-top:10px;
 }
