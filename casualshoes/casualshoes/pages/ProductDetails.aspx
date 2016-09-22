@@ -5,7 +5,7 @@
 
     <h2>Produktnamn</h2>
 
-    <article id="product-details-container">
+    <article id="product-details-container" class="adaptable-footer">
         <section id="product-details-images-section">
             <aside>
                 <figure>

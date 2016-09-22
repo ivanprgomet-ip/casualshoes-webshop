@@ -170,6 +170,12 @@ footer{
 #product-details-container{
     display:flex;
 }
+.adaptable-footer{
+    min-height:60vh; /*todo: fix this solution*/
+}
+#product-details-container figure{
+    align-items: flex-start;
+}
 .product-details-img-small{
     width:100px;
     height:auto;
@@ -217,7 +223,7 @@ footer{
         font-size:14px;
         padding: 7px 10% 7px 8px;
         border:none;
-        cursor:pointer;
+        cursor:pointer; 
         background-color:lightgreen;
 }
 #product-details-specs-section div{
