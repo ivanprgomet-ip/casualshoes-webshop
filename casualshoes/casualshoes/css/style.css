@@ -229,3 +229,10 @@ footer{
 #product-details-specs-section div{
     margin-top:10px;
 }
+
+
+/*CONTACT.ASPX*/
+input#ContentPlaceHolder_txt_email,
+input#ContentPlaceHolder_txt_fullname {
+    width: 100%;
+}
