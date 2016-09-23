@@ -32,14 +32,14 @@ namespace casualshoes.data_access_layer
             }
         }
 
-        public void InsertAuthor(string firstname, string lastname)
-        {
-            string comm = $"Insert Into Authors(Firstname, Lastname) Values('{firstname}','{lastname}')";
-            using (SqlCommand sqlComm = new SqlCommand(comm, _sqlConn))
-            {
-                sqlComm.ExecuteNonQuery();
-            }
-        }
+        //public void InsertAuthor(string firstname, string lastname)
+        //{
+        //    string comm = $"Insert Into Authors(Firstname, Lastname) Values('{firstname}','{lastname}')";
+        //    using (SqlCommand sqlComm = new SqlCommand(comm, _sqlConn))
+        //    {
+        //        sqlComm.ExecuteNonQuery();
+        //    }
+        //}
         //public void DeleteAuthor(int id)
         //{
         //    string comm = $"DELETE FROM Authors WHERE AuthorID={id}";
