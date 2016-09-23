@@ -135,7 +135,8 @@
     <Content Include="pages\AboutUs.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="data_access_layer\Connection.cs" />
+    <Compile Include="data_access_layer\Admin.cs" />
+    <Compile Include="models\Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>

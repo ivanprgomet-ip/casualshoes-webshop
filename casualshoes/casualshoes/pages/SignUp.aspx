@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="casualshoes.WebForm12" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
      <fieldset>
+         <%-- todo: fix validation. connect to database and add new customer --%>
             <legend>Enter Information</legend>
             <table>
                 <tr>
