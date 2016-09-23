@@ -13,93 +13,93 @@ namespace casualshoes {
     public partial class WebForm10 {
         
         /// <summary>
-        /// firstname control.
+        /// firstnameID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox firstname;
+        protected global::System.Web.UI.WebControls.TextBox firstnameID;
         
         /// <summary>
-        /// lastname control.
+        /// lastnameID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox lastname;
+        protected global::System.Web.UI.WebControls.TextBox lastnameID;
         
         /// <summary>
-        /// adress control.
+        /// adressID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox adress;
+        protected global::System.Web.UI.WebControls.TextBox adressID;
         
         /// <summary>
-        /// city control.
+        /// cityID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox city;
+        protected global::System.Web.UI.WebControls.TextBox cityID;
         
         /// <summary>
-        /// zip control.
+        /// zipID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox zip;
+        protected global::System.Web.UI.WebControls.TextBox zipID;
         
         /// <summary>
-        /// deliveryAdress control.
+        /// deliveryAdressID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox deliveryAdress;
+        protected global::System.Web.UI.WebControls.TextBox deliveryAdressID;
         
         /// <summary>
-        /// deliveryCity control.
+        /// deliveryCityID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox deliveryCity;
+        protected global::System.Web.UI.WebControls.TextBox deliveryCityID;
         
         /// <summary>
-        /// DeliveryZip control.
+        /// DeliveryZipID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DeliveryZip;
+        protected global::System.Web.UI.WebControls.TextBox DeliveryZipID;
         
         /// <summary>
-        /// emailUsername control.
+        /// emailUsernameID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox emailUsername;
+        protected global::System.Web.UI.WebControls.TextBox emailUsernameID;
         
         /// <summary>
-        /// TextBox1 control.
+        /// passwordID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword TextBox1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword passwordID;
     }
 }
