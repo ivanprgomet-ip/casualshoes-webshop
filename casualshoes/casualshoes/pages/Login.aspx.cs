@@ -19,6 +19,7 @@ namespace casualshoes
         protected void btn_login_Click(object sender, EventArgs e)
         {
             //todo: login a user. checks if the username/mail matches the password on the same row, and hence logs the person into the website
+            //todo: fix the IsMember stored procedure. if someone has the same mail and password then we get an error (Subquery returned more than 1 value)
 
 
         }
