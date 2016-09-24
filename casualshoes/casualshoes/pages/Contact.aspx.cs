@@ -14,7 +14,6 @@ namespace casualshoes
         {
 
         }
-        //TODO: FIX bug unobtrusive validation mode error in this code
         protected void btn_sendMail_Click(object sender, EventArgs e)
         {
             
