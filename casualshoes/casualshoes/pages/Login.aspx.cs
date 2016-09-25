@@ -36,6 +36,7 @@ namespace casualshoes
                 lbl_login_msg.Text = "Login Succeeded";
 
                 //TODO: add logic for a logged in user (remove login icon and put "hello [username] instead
+                ((Site1)this.Master).LoginAndWelcome= "Welcome [users fullname]";
             }
             else
             {

@@ -29,7 +29,9 @@
                         </figure>
                         <figure>
                             <img src="../images/png/user.png" />
-                            <figcaption class="icon-text"><a href="Login.aspx">Logga In</a></figcaption>
+                            <figcaption class="icon-text">
+                                <a href="~/pages/Login.aspx" id="fig_login_welcome" runat="server">Logga In</a>
+                            </figcaption>
                         </figure>
                     </div>
                     <div id="header-bottom-nav">

@@ -71,20 +71,19 @@ namespace casualshoes.data_access_layer
             else
                 return false;
         }
-        //TODO: fix spLoginSucceded
         public bool LoginSuccedded(string email, string password)
         {
             int LoginSuccess = 0;
-            //todo: connect to database to see if any user exists with this email and password
+
             using(SqlCommand sqlComm = new SqlCommand("spLoginSuccedded",_sqlConn))
             {
                 sqlComm.CommandType = System.Data.CommandType.StoredProcedure;
 
-                //adding the two inparameters
+                //inparameters of the stored procedure
                 sqlComm.Parameters.AddWithValue("@email", email);
                 sqlComm.Parameters.AddWithValue("@password", password);
 
-                //telling programm it can expect a return value
+                //return value of the stored procedure
                 SqlParameter outputParameter = new SqlParameter();
                 outputParameter.SqlDbType = System.Data.SqlDbType.Int;
                 outputParameter.Direction = System.Data.ParameterDirection.ReturnValue;
@@ -93,7 +92,8 @@ namespace casualshoes.data_access_layer
                 sqlComm.ExecuteNonQuery();
                 LoginSuccess = (int)outputParameter.Value;
             }
-            //if true then login succedded, else login failed
+
+            
             if (LoginSuccess == 1)
                 return true;
             else
