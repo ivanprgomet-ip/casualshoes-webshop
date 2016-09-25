@@ -63,7 +63,7 @@ namespace casualshoes.data_access_layer
 
 
                 sqlComm.ExecuteNonQuery();
-                ReturnedCustomerID = Convert.ToInt32(outputParameter.Value);//
+                ReturnedCustomerID = Convert.ToInt32(outputParameter.Value);
             }
 
             if (ReturnedCustomerID>0)
@@ -74,8 +74,26 @@ namespace casualshoes.data_access_layer
         //TODO: fix spLoginSucceded
         public bool LoginSuccedded(string email, string password)
         {
+            int LoginSuccess = 0;
             //todo: connect to database to see if any user exists with this email and password
+            using(SqlCommand sqlComm = new SqlCommand("spLoginSuccedded",_sqlConn))
+            {
+                sqlComm.CommandType = System.Data.CommandType.StoredProcedure;
 
+                //telling programm it can expect a return value
+                SqlParameter outputParameter = new SqlParameter();
+                outputParameter.SqlDbType = System.Data.SqlDbType.Int;
+                outputParameter.Direction = System.Data.ParameterDirection.ReturnValue;
+                sqlComm.Parameters.Add(outputParameter);
+
+                sqlComm.ExecuteNonQuery();
+                LoginSuccess = (int)outputParameter.Value;
+            }
+            //if true then login succedded, else login failed
+            if (LoginSuccess == 1)
+                return true;
+            else
+                return false;
         }
 
         //public void InsertAuthor(string firstname, string lastname)
