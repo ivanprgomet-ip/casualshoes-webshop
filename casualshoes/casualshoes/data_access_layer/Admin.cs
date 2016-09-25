@@ -25,7 +25,7 @@ namespace casualshoes.data_access_layer
         //CRUD OPERATIONS
         public void InsertNewCustomer(Customer NewCustomer)
         {
-            //TODO: use a stored procedure to insert new customer instead
+            //TODO: make this command a stored procedure instead
             string comm = $"INSERT INTO Customer(Firstname, Lastname, Adress, City, ZipCode, Password, EmailUsername) Values('{NewCustomer.Firstname}','{NewCustomer.Lastname}','{NewCustomer.Adress}','{NewCustomer.City}','{NewCustomer.ZipCode}','{NewCustomer.Password}','{NewCustomer.EmailUsername}')";
             using (SqlCommand sqlComm = new SqlCommand(comm, _sqlConn))
             {
@@ -72,6 +72,11 @@ namespace casualshoes.data_access_layer
                 return false;
         }
         //TODO: fix spLoginSucceded
+        public bool LoginSuccedded(string email, string password)
+        {
+            //todo: connect to database to see if any user exists with this email and password
+
+        }
 
         //public void InsertAuthor(string firstname, string lastname)
         //{
