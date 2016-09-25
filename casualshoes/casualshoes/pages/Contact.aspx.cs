@@ -32,9 +32,6 @@ namespace casualshoes
             {
                 lbl_sentMessage.Text = "Du har inte fyllt i formuläret fullständigt!";
             }
-
         }
-
-
     }
 }

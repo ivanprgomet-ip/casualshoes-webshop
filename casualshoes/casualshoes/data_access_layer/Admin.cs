@@ -80,6 +80,10 @@ namespace casualshoes.data_access_layer
             {
                 sqlComm.CommandType = System.Data.CommandType.StoredProcedure;
 
+                //adding the two inparameters
+                sqlComm.Parameters.AddWithValue("@email", email);
+                sqlComm.Parameters.AddWithValue("@password", password);
+
                 //telling programm it can expect a return value
                 SqlParameter outputParameter = new SqlParameter();
                 outputParameter.SqlDbType = System.Data.SqlDbType.Int;

@@ -7,22 +7,22 @@
             <td>Mail:</td>
             <td>
                 <asp:TextBox ID="txt_login_mail" runat="server"></asp:TextBox>
-
             </td>
         </tr>
         <tr>
             <td>Password:</td>
             <td>
-                <asp:TextBox ID="txt_login_password" runat="server"></asp:TextBox>
-
+                <asp:TextBox ID="txt_login_password" TextMode="Password" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td>
                 <asp:Button ID="btn_login" runat="server" Text="Login" OnClick="btn_login_Click" />
             </td>
+            <td>
+                <asp:label id="lbl_login_msg" runat="server"></asp:label>
+            </td>
         </tr>
     </table>
-
     <span>Don't have an Account? <a href="Signup.aspx">Sign Up</a>!</span>
 </asp:Content>
