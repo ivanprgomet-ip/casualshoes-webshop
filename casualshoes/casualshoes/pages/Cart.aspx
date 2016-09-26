@@ -11,17 +11,17 @@
             <div id="ListItems">
 
                 // comentar om at använda gridviwe
-                //en snabb test för att comita
+              
             
             <div id="Pannelbody" style="height:300px; width:100%; border: 1px solid black; margin-top: 10px;"  >
                 <table style="width:100%">
                     <thead>
                         <tr>
                             <th style="text-align:left">bild</th>
-                            <th style="text-align:left; width:70%"; >Artikel</th>
-                            <th style="text-align:left">Antal</th>
-                            <th style="text-align:left">Pris</th>
-                            <th style="text-align:left">Tabort</th>
+                            <th style="text-align:left; width:70%"; >artikel</th>
+                            <th style="text-align:left">antal</th>
+                            <th style="text-align:left">pris</th>
+                            <th style="text-align:left">tabort</th>
 
                         </tr>
                         
