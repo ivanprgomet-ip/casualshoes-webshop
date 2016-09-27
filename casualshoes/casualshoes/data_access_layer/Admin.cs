@@ -75,13 +75,13 @@ namespace casualshoes.data_access_layer
         {
             int LoginSuccess = 0;
 
-            using(SqlCommand sqlComm = new SqlCommand("spLoginSuccedded",_sqlConn))
+            using(SqlCommand sqlComm = new SqlCommand("spLoginSucceeded",_sqlConn))
             {
                 sqlComm.CommandType = System.Data.CommandType.StoredProcedure;
 
                 //inparameters of the stored procedure
-                sqlComm.Parameters.AddWithValue("@email", email);
-                sqlComm.Parameters.AddWithValue("@password", password);
+                sqlComm.Parameters.AddWithValue("@Email", email);
+                sqlComm.Parameters.AddWithValue("@Password", password);
 
                 //return value of the stored procedure
                 SqlParameter outputParameter = new SqlParameter();
