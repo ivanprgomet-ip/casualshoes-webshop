@@ -42,7 +42,7 @@ namespace casualshoes.data_access_layer
                 sqlComm.Parameters.AddWithValue("@Email", emailUsername);
 
                 //creating output parameter and adding to sqlcomand object 
-                SqlParameter outputParameter= new SqlParameter();
+                SqlParameter outputParameter = new SqlParameter();
                 outputParameter.ParameterName = "@MemberExists";//parameter name (see sp in database)
                 outputParameter.SqlDbType = System.Data.SqlDbType.Bit;//parameter sql type
                 outputParameter.Direction = System.Data.ParameterDirection.ReturnValue;
@@ -57,7 +57,7 @@ namespace casualshoes.data_access_layer
                 ReturnedCustomerID = Convert.ToInt32(outputParameter.Value);
             }
 
-            if (ReturnedCustomerID>0)
+            if (ReturnedCustomerID > 0)
                 return true;
             else
                 return false;
@@ -66,7 +66,7 @@ namespace casualshoes.data_access_layer
         {
             int LoginSuccess = 0;
 
-            using(SqlCommand sqlComm = new SqlCommand("spLoginSucceeded",_sqlConn))
+            using (SqlCommand sqlComm = new SqlCommand("spLoginSucceeded", _sqlConn))
             {
                 sqlComm.CommandType = System.Data.CommandType.StoredProcedure;
 
@@ -84,7 +84,7 @@ namespace casualshoes.data_access_layer
                 LoginSuccess = (int)outputParameter.Value;
             }
 
-            
+
             if (LoginSuccess == 1)
                 return true;
             else
