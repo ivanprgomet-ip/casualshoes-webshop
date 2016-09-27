@@ -105,9 +105,9 @@
     <Content Include="images\png\shippingbox.png" />
     <Content Include="images\png\shoppingcrart.png" />
     <Content Include="images\png\user.png" />
-    <Content Include="images\products\boots\1320-1.jpg" />
-    <Content Include="images\products\boots\1320-2.jpg" />
-    <Content Include="images\products\boots\1320-3.jpg" />
+    <Content Include="images\products\boots\1320\1.jpg" />
+    <Content Include="images\products\boots\1320\2.jpg" />
+    <Content Include="images\products\boots\1320\3.jpg" />
     <Content Include="images\products\boots\1460-1.jpg" />
     <Content Include="images\products\boots\1460-2.jpg" />
     <Content Include="images\products\boots\1460-3.jpg" />
@@ -183,9 +183,9 @@
     <Content Include="images\products\sneakers\Cortez1.jpg" />
     <Content Include="images\products\sneakers\Cortez2.jpg" />
     <Content Include="images\products\sneakers\Cortez3.jpg" />
-    <Content Include="images\products\sneakers\G6-1.jpg" />
-    <Content Include="images\products\sneakers\g6-2.jpg" />
-    <Content Include="images\products\sneakers\G6-3.jpg" />
+    <Content Include="images\products\sneakers\G6\1.jpg" />
+    <Content Include="images\products\sneakers\G6\2.jpg" />
+    <Content Include="images\products\sneakers\G6\3.jpg" />
     <Content Include="images\products\sneakers\Gazelle1.jpg" />
     <Content Include="images\products\sneakers\Gazelle2.jpg" />
     <Content Include="images\products\sneakers\Gazelle3.jpg" />
