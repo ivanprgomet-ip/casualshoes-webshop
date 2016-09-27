@@ -22,7 +22,6 @@ namespace casualshoes.data_access_layer
             _sqlConn.Dispose();
         }
 
-        //CRUD OPERATIONS
         public void InsertNewCustomer(Customer NewCustomer)
         {
             //TODO: make this command a stored procedure instead
@@ -32,14 +31,6 @@ namespace casualshoes.data_access_layer
                 sqlComm.ExecuteNonQuery();
             }
         }
-
-        /// <summary>
-        /// returns true if username is occupied , 
-        /// returns false if the username is free for 
-        /// the new user to use.
-        /// </summary>
-        /// <param name="emailUsername"></param>
-        /// <returns></returns>
         public bool UsernameAlreadyExists(string emailUsername)
         {
             int ReturnedCustomerID = 0;
