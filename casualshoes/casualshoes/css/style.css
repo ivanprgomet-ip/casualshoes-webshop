@@ -246,5 +246,5 @@ input#ContentPlaceHolder_txt_fullname {
 
 /*Product list pages - boots...*/
 .product-list-table{
-    float:right;
+    float:left;
 }
