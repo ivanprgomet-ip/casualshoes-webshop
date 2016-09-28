@@ -105,6 +105,102 @@
     <Content Include="images\png\shippingbox.png" />
     <Content Include="images\png\shoppingcrart.png" />
     <Content Include="images\png\user.png" />
+    <Content Include="images\products\boots\1320\1.jpg" />
+    <Content Include="images\products\boots\1320\2.jpg" />
+    <Content Include="images\products\boots\1320\3.jpg" />
+    <Content Include="images\products\boots\1460-1.jpg" />
+    <Content Include="images\products\boots\1460-2.jpg" />
+    <Content Include="images\products\boots\1460-3.jpg" />
+    <Content Include="images\products\boots\1580-1.jpg" />
+    <Content Include="images\products\boots\1580-2.jpg" />
+    <Content Include="images\products\boots\1580-3.jpg" />
+    <Content Include="images\products\boots\1620-1.jpg" />
+    <Content Include="images\products\boots\1620-2.jpg" />
+    <Content Include="images\products\boots\1620-3.jpg" />
+    <Content Include="images\products\boots\1920-1.jpg" />
+    <Content Include="images\products\boots\1920-2.jpg" />
+    <Content Include="images\products\boots\1920-3.jpg" />
+    <Content Include="images\products\boots\Navy1.jpg" />
+    <Content Include="images\products\boots\Navy2.jpg" />
+    <Content Include="images\products\boots\Navy3.jpg" />
+    <Content Include="images\products\boots\Steady1.jpg" />
+    <Content Include="images\products\boots\Steady2.jpg" />
+    <Content Include="images\products\boots\Steady3.jpg" />
+    <Content Include="images\products\boots\Sturdy1.jpg" />
+    <Content Include="images\products\boots\Sturdy2.jpg" />
+    <Content Include="images\products\boots\Sturdy3.jpg" />
+    <Content Include="images\products\lowshoes\California1.jpg" />
+    <Content Include="images\products\lowshoes\California2.jpg" />
+    <Content Include="images\products\lowshoes\California3.jpg" />
+    <Content Include="images\products\lowshoes\London1.jpg" />
+    <Content Include="images\products\lowshoes\London2.jpg" />
+    <Content Include="images\products\lowshoes\London3.jpg" />
+    <Content Include="images\products\lowshoes\Merchant1.jpg" />
+    <Content Include="images\products\lowshoes\Merchant2.jpg" />
+    <Content Include="images\products\lowshoes\Merchant3.jpg" />
+    <Content Include="images\products\lowshoes\Moscow1.jpg" />
+    <Content Include="images\products\lowshoes\Moscow2.jpg" />
+    <Content Include="images\products\lowshoes\Moscow3.jpg" />
+    <Content Include="images\products\lowshoes\NewYork1.jpg" />
+    <Content Include="images\products\lowshoes\NewYork2.jpg" />
+    <Content Include="images\products\lowshoes\NewYork3.jpg" />
+    <Content Include="images\products\lowshoes\Rio1.jpg" />
+    <Content Include="images\products\lowshoes\Rio2.jpg" />
+    <Content Include="images\products\lowshoes\Rio3.jpg" />
+    <Content Include="images\products\lowshoes\SanDiego1.jpg" />
+    <Content Include="images\products\lowshoes\SanDiego2.jpg" />
+    <Content Include="images\products\lowshoes\SanDiego3.jpg" />
+    <Content Include="images\products\lowshoes\SantaMonica1.jpg" />
+    <Content Include="images\products\lowshoes\SantaMonica2.jpg" />
+    <Content Include="images\products\lowshoes\SantaMonica3.jpg" />
+    <Content Include="images\products\sandals\Adilette1.jpg" />
+    <Content Include="images\products\sandals\Adilette2.jpg" />
+    <Content Include="images\products\sandals\Adilette3.jpg" />
+    <Content Include="images\products\sandals\Bali1.jpg" />
+    <Content Include="images\products\sandals\bali2.jpg" />
+    <Content Include="images\products\sandals\bali3.jpg" />
+    <Content Include="images\products\sandals\Elephant1.jpg" />
+    <Content Include="images\products\sandals\Elephant2.jpg" />
+    <Content Include="images\products\sandals\Elephant3.jpg" />
+    <Content Include="images\products\sandals\Havanna1.jpg" />
+    <Content Include="images\products\sandals\havanna2.jpg" />
+    <Content Include="images\products\sandals\Havanna3.jpg" />
+    <Content Include="images\products\sandals\Hawaii1.jpg" />
+    <Content Include="images\products\sandals\Hawaii2.jpg" />
+    <Content Include="images\products\sandals\hawaii3.jpg" />
+    <Content Include="images\products\sandals\SkinnyMax1.jpg" />
+    <Content Include="images\products\sandals\SkinnyMax2.jpg" />
+    <Content Include="images\products\sandals\SkinnyMax3.jpg" />
+    <Content Include="images\products\sandals\Teva1.jpg" />
+    <Content Include="images\products\sandals\Teva2.jpg" />
+    <Content Include="images\products\sandals\Teva3.jpg" />
+    <Content Include="images\products\sandals\Traction1.jpg" />
+    <Content Include="images\products\sandals\Traction2.jpg" />
+    <Content Include="images\products\sandals\Traction3.jpg" />
+    <Content Include="images\products\sneakers\Bronx1.jpg" />
+    <Content Include="images\products\sneakers\Bronx2.jpg" />
+    <Content Include="images\products\sneakers\Bronx3.jpg" />
+    <Content Include="images\products\sneakers\Cortez1.jpg" />
+    <Content Include="images\products\sneakers\Cortez2.jpg" />
+    <Content Include="images\products\sneakers\Cortez3.jpg" />
+    <Content Include="images\products\sneakers\G6\1.jpg" />
+    <Content Include="images\products\sneakers\G6\2.jpg" />
+    <Content Include="images\products\sneakers\G6\3.jpg" />
+    <Content Include="images\products\sneakers\Gazelle1.jpg" />
+    <Content Include="images\products\sneakers\Gazelle2.jpg" />
+    <Content Include="images\products\sneakers\Gazelle3.jpg" />
+    <Content Include="images\products\sneakers\Hamburg1.jpg" />
+    <Content Include="images\products\sneakers\Hamburg2.jpg" />
+    <Content Include="images\products\sneakers\Hamburg3.jpg" />
+    <Content Include="images\products\sneakers\Harambe1.jpg" />
+    <Content Include="images\products\sneakers\Harambe2.jpg" />
+    <Content Include="images\products\sneakers\Harambe3.jpg" />
+    <Content Include="images\products\sneakers\O2Max1.jpg" />
+    <Content Include="images\products\sneakers\O2Max2.jpg" />
+    <Content Include="images\products\sneakers\O2Max3.jpg" />
+    <Content Include="images\products\sneakers\Originals1.jpg" />
+    <Content Include="images\products\sneakers\Originals2.jpg" />
+    <Content Include="images\products\sneakers\Originals3.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -119,6 +215,7 @@
     <Content Include="pages\Cart.aspx" />
     <Content Include="pages\Login.aspx" />
     <Content Include="pages\ProductDetails.aspx" />
+    <Content Include="pages\SignUp.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -134,6 +231,8 @@
     <Content Include="pages\AboutUs.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="data_access_layer\Admin.cs" />
+    <Compile Include="models\Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
@@ -218,6 +317,13 @@
     </Compile>
     <Compile Include="pages\ProductDetails.aspx.designer.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

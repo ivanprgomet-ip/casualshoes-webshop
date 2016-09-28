@@ -1,5 +1,6 @@
-﻿<%@ Page Title="Kontakt" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="casualshoes.WebForm8" %>
-<<<<<<< HEAD
+﻿<%@ Page Title="Kontakt" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="casualshoes.WebForm8"  %>
+
+<%--<<<<<<< HEAD
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
     <h1>Kontakta oss</h1>
     <div>
@@ -7,22 +8,23 @@
         <asp:TextBox runat="server" ID="name" />
         <asp:RequiredFieldValidator runat="server" ID="rfvname" ControlToValidate="name" ErrorMessage="Enter namn"/>
  </div>
-    <%--<div>
+    <div>
         <label>E-mail*</label>
         <asp:TextBox runat="server" ID="email" />
         <asp:RequiredFieldValidator runat="server" ID="rfvEmail" ControlToValidate="email" ErrorMessage="Enter email" Display="Dynamic" />
    
-</div>--%>
-<%--    <div>
+</div>
+  
+    <div>
         <label>Medellande*</label>
         <asp:Textbox  runat="server" ID="medellande"/>
-    </div>--%>
+    </div>
     <asp:Button runat="server" ID="btnSkicka" Text="Skicka medellande" />
-=======
+=======--%>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
     <h1>Kontakta oss</h1>
-    <table>
+  <%--  <table>
         <tr>
             <td>
                 <label>Namn:</label>
@@ -62,5 +64,36 @@
             </td>
         </tr>
     </table>
->>>>>>> master
+>>>>>>> master--%>
+
+    <%-- Variant tree --%>
+
+    <asp:Panel runat="server">
+        <asp:Label runat="server">Name:</asp:Label>
+        <asp:TextBox runat="server" ID="txtName"></asp:TextBox>
+
+        <br />
+
+        <asp:Label runat="server">Email</asp:Label>
+        <asp:TextBox runat="server" ID="txtEmail"></asp:TextBox>
+        <br />
+
+        <asp:Label runat="server">Subject</asp:Label>
+        <asp:TextBox runat="server" ID="txtSubject" ></asp:TextBox>
+        <br />
+
+      
+
+        <asp:Label runat="server" >Message</asp:Label>
+        <textarea runat="server" id="txtMessage" rows="7" columns="20"></textarea>
+        <br />
+
+        <asp:Button runat="server" ID="btnSend" Text="Send"  onClick="btnSend_Click1" />
+         <asp:Button runat="server" ID="btnReset" Text="Reset" onClick="btnReset_Click1" />
+
+        <br />
+
+
+    </asp:Panel>
+
 </asp:Content>
