@@ -9,7 +9,7 @@ namespace casualshoes.models
     {
         public int id;
         public string name;
-        public float price;
+        public decimal price;
         public string description;
         public int size;
 
@@ -17,7 +17,7 @@ namespace casualshoes.models
         public string productCategory;
 
 
-        public Product(int id, string name, float price, string description, int size)
+        public Product(int id, string name, decimal price, string description, int size)
         {
             this.id = id;
             this.name = name;
@@ -26,7 +26,7 @@ namespace casualshoes.models
             this.size = size;
         }
 
-        public Product(int id, string name, float price, string description, int size, string productBrand, string productCategory)
+        public Product(int id, string name, decimal price, string description, int size, string productBrand, string productCategory)
         {
             
             this.id = id;

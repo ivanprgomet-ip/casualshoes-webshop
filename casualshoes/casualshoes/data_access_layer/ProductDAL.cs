@@ -26,13 +26,11 @@ namespace casualshoes.data_access_layer
                 Connection.comm.CommandText = sqlQuery;
                 SqlDataReader reader = Connection.comm.ExecuteReader();
 
-
-                //todo: skippar denna raden??
                 while (reader.Read())//while reader returns true, there are rows to be read
                 {
                     int id = reader.GetInt32(0);
                     string productName = reader.GetString(1);
-                    float productPrice = reader.GetFloat(2);
+                    decimal productPrice = reader.GetDecimal(2);
                     string brandName = reader.GetString(3);
                     int productSize = reader.GetInt32(4);
                     string categoryName = reader.GetString(5);
