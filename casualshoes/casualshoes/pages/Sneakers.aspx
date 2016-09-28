@@ -15,6 +15,10 @@
 
     </asp:ListView>
 
-<asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=rima;Initial Catalog=CasualShoesDB;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [ProductPrice], [ProductName] FROM [Product] WHERE ([ProductCategoryId] = @ProductCategoryId)">
+    <SelectParameters>
+        <asp:Parameter DefaultValue="1" Name="ProductCategoryId" Type="Int32" />
+    </SelectParameters>
+    </asp:SqlDataSource>
 
 </asp:Content>
