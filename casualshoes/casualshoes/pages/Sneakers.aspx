@@ -4,34 +4,28 @@
 
     <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
         <ItemTemplate>
-            <div>
-                <table class="product-list-table">
-                      <tr>
-                        <td>
-                           <img src='<%#Eval("ImgUrl") %>1.jpg' width="250px" height="250px"/> 
-                            
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <%#Eval("ProductName") %>  
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <%#Eval("ProductPrice") %>
-                        </td>
-                    </tr>
-                  
-                   
-
-                </table>
+           
+            
 
 
-                <%-- Todo skapa bild class  --%>
+                 <div class="product-list-flex-cont">
+                     <div class="product-list-flex-item">
+                         <div >
+                               <img src='<%#Eval("ImgUrl") %>1.jpg' width="250px" height="250px"/> 
+                          </div>
+                         <div  class="product-list-table-child">      
+                    
+                                <%#Eval("ProductName") %>  
+                        </div>
+                         <div  class="product-list-table-child">
+                                <%#Eval("ProductPrice") %>
+                         </div>
+                    </div>
+
+                </div>
               
                 
-            </div>
+           
 
         </ItemTemplate>
 

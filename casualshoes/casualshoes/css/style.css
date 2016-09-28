@@ -244,7 +244,21 @@ input#ContentPlaceHolder_txt_fullname {
     background-color:blue;
 }
 
-/*Product list pages - boots...*/
-.product-list-table{
-    float:left;
+/*Product list pages - sneakers,boots...*/
+
+
+.product-list-flex-cont{
+      
+     display:flex;
+       flex-direction: row ;
+       width:940px;
+       
+    
+}
+.product-list-flex-cont{
+    width:250px;
+}
+.product-list-table-child{
+
+    text-align:center;
 }
