@@ -206,6 +206,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="pages\TESTING.aspx" />
+    <Content Include="pages\TESTING2.aspx" />
     <Content Include="Site1.Master" />
     <Content Include="pages\Sneakers.aspx" />
     <Content Include="pages\Sandals.aspx" />
@@ -243,6 +244,13 @@
     </Compile>
     <Compile Include="pages\TESTING.aspx.designer.cs">
       <DependentUpon>TESTING.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\TESTING2.aspx.cs">
+      <DependentUpon>TESTING2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\TESTING2.aspx.designer.cs">
+      <DependentUpon>TESTING2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">

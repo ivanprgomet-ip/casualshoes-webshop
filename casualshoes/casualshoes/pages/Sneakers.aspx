@@ -23,7 +23,7 @@
 
     </asp:ListView>
 
-<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=rima;Initial Catalog=CasualShoesDB;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [ProductPrice], [ProductName] FROM [Product] WHERE ([ProductCategoryId] = @ProductCategoryId AND [ProductSize] =  @ProductSize )">
+<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=.;Initial Catalog=CasualShoesDB;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [ProductPrice], [ProductName] FROM [Product] WHERE ([ProductCategoryId] = @ProductCategoryId AND [ProductSize] =  @ProductSize )">
     <SelectParameters>
         <asp:Parameter DefaultValue="1" Name="ProductCategoryId" Type="Int32" />
         <asp:Parameter DefaultValue="40" Name="ProductSize" Type="Int32" />
