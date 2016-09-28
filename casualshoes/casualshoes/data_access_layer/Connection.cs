@@ -9,8 +9,8 @@ namespace casualshoes.data_access_layer
 {
     public static class Connection
     {
-        private static SqlConnection conn;
-        private static SqlCommand comm;
+        public static SqlConnection conn;
+        public static SqlCommand comm;
 
         static Connection()
         {
