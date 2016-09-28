@@ -17,12 +17,12 @@ namespace casualshoes
             //SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["CasualShoesDBConnectionString"].ConnectionString);
             //conn.Open();
             //string sql = $"SELECT c.CategoryName from Product AS p INNER JOIN Category AS c ON p.ProductCategoryid = c.Categoryid";
-            //using (SqlCommand cmd = new SqlCommand(sql,conn))
+            //using (SqlCommand cmd = new SqlCommand(sql, conn))
             //{
-            //    SqlDataReader reader = reader; 
+            //    SqlDataReader reader = reader;
             //    while (reader.Read())
             //    {
-            //        ListView1 = 
+            //        ListView1. =
             //    }
             //}
         }
