@@ -37,7 +37,9 @@ namespace casualshoes.pages
                 sb.Append(string.Format(
                     @"<table class='ProductsPanel'>
                     <tr>
-                        <th rowspan='6' width='150px'><img runat='server' src='{6}' /></th>
+                        <th rowspan='6' width='150px'>
+                            <img runat='server' src='{6}' />
+                        </th>
 
                         <th width='50px'>Name: </th>
                         <td>{0}</td>

@@ -238,8 +238,7 @@ input#ContentPlaceHolder_txt_fullname {
 }
 
 
-
 /*TESTING.ASPX*/
-#ProductsPanel{
-    background-color:blue;
+.ProductsPanel img{
+    border:1px solid black;
 }
