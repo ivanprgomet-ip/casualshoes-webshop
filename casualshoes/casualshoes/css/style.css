@@ -236,3 +236,10 @@ input#ContentPlaceHolder_txt_email,
 input#ContentPlaceHolder_txt_fullname {
     width: 100%;
 }
+
+
+
+/*TESTING.ASPX*/
+#ProductsPanel{
+    background-color:blue;
+}
