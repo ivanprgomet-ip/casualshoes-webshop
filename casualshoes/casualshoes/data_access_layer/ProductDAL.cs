@@ -18,7 +18,7 @@ namespace casualshoes.data_access_layer
                                             FROM Brand INNER JOIN
                                             Product ON Brand.BrandId = Product.ProductBrandId INNER JOIN
                                             Category ON Product.ProductCategoryId = Category.CategoryId
-				                            WHERE CategoryName LIKE '{0}'", productCategory);
+                                            WHERE CategoryName LIKE '{0}'", productCategory);
 
             try
             {
@@ -46,5 +46,6 @@ namespace casualshoes.data_access_layer
             }
             return list;
         }
+
     }
 }
