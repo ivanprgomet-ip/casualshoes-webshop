@@ -243,3 +243,8 @@ input#ContentPlaceHolder_txt_fullname {
 #ProductsPanel{
     background-color:blue;
 }
+
+/*Product list pages - boots...*/
+#product-list-table{
+    float:left;
+}
