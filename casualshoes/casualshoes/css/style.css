@@ -239,6 +239,36 @@ input#ContentPlaceHolder_txt_fullname {
 
 
 /*TESTING.ASPX*/
+<<<<<<< HEAD
 .ProductsPanel img{
     border:1px solid black;
 }
+=======
+#ProductsPanel{
+    background-color:blue;
+}
+
+/*Product list pages - sneakers,boots...*/
+.product-catalog-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.product-list-container{
+     display:flex;
+     flex-direction:column;
+
+     width:235px;
+     height:auto;
+
+     background-color:lightgray;
+
+     padding:5px;
+     margin:5px;
+}
+.product-list-container img{
+     width:235px;
+     height:auto;
+}
+
+>>>>>>> premaster
