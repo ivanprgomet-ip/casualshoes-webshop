@@ -43,17 +43,18 @@ namespace casualshoes
         {
            
             MailMessage msg = new MailMessage();
-            msg.To.Add(new MailAddress("projekt.eshop@gmail.com"));
-            msg.From = new MailAddress(txtEmail.Text);
+            msg.To.Add(new MailAddress("casual.shoes.project.noreply@gmail.com"));
+            msg.From = new MailAddress("casual.shoes.project.noreply@gmail.com");
             msg.Subject = txtSubject.Text;
-            msg.Body = txtName.Text + Environment.NewLine + txtMessage.Value;
+            msg.Body = txtName.Text + Environment.NewLine + txtMessage.Value + $"\nFrom: {txtEmail.Text}";
             SmtpClient client = new SmtpClient();
             client.UseDefaultCredentials = false;
             client.EnableSsl = true;
             client.Host = "smtp.gmail.com";
             client.Port = 587;
-            client.Credentials = new NetworkCredential("projekt.eshop","qazqaz123");
+            client.Credentials = new NetworkCredential("casual.shoes.project.noreply@gmail.com", "");
             client.EnableSsl = true;
+            //client.Host = "localhost";
             client.Send(msg);
            
 
