@@ -2,17 +2,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
     <h2>Sneakers</h2>
 
-    <asp:ListView ID="ListView1" runat="server">
+    <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
         <ItemTemplate>
             <div>
                 <%-- Todo skapa bild class  --%>
-                <div>image</div>
-                <div>Name</div>
-                <div>Pris</div>
+                <div><%#Eval("ProductName") %></div>
+                <div><%#Eval("ProductPrice") %></div>
+                
             </div>
 
         </ItemTemplate>
 
     </asp:ListView>
+
+<asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
 
 </asp:Content>
