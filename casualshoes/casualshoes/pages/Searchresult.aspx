@@ -26,7 +26,7 @@
         </asp:ListView>
     </article>
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=.;Initial Catalog=CasualShoesDB;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM Product WHERE ([ProductName] like '%' + @Name + '%' AND ProductSize = 40)">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=.;Initial Catalog=CasualShoesDB;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM Product WHERE ([ProductName] like '%' + @Name + '%')">
         <SelectParameters>
             <asp:QueryStringParameter Name="Name" QueryStringField="Term" DbType="string"/>
         </SelectParameters>
