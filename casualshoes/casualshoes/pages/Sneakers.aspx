@@ -27,10 +27,10 @@
         </asp:ListView>
     </article>
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=.;Initial Catalog=CasualShoesDB;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [ProductId], [ImgUrl], [ProductPrice], [ProductName] FROM [Product] WHERE ([ProductCategoryId] = @ProductCategoryId AND [ProductSize] =  @ProductSize )">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=.;Initial Catalog=CasualShoesDB;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [ProductId], [ImgUrl], [ProductPrice], [ProductName] FROM [Product] WHERE ([ProductCategoryId] = @ProductCategoryId)">
         <SelectParameters>
             <asp:Parameter DefaultValue="1" Name="ProductCategoryId" Type="Int32" />
-            <asp:Parameter DefaultValue="40" Name="ProductSize" Type="Int32" />
+            <%--<asp:Parameter DefaultValue="40" Name="ProductSize" Type="Int32" />--%>
         </SelectParameters>
     </asp:SqlDataSource>
 
