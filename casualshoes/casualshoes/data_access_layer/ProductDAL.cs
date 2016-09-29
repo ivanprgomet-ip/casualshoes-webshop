@@ -14,7 +14,7 @@ namespace casualshoes.data_access_layer
         public static ArrayList GetProductsByCategory(string productCategory)
         {
             ArrayList list = new ArrayList();
-            string sqlQuery = string.Format(@"SELECT Product.ProductId, Product.ProductName,Product.ProductPrice, Brand.BrandName, ProductSize, Category.CategoryName,Product.ProductDescription
+            string sqlQuery = string.Format(@"SELECT Product.ProductId, Product.ProductName,Product.ProductPrice, Brand.BrandName, ProductSize, Category.CategoryName,Product.ProductDescription, Product.ImgUrl
                                             FROM Brand INNER JOIN
                                             Product ON Brand.BrandId = Product.ProductBrandId INNER JOIN
                                             Category ON Product.ProductCategoryId = Category.CategoryId
@@ -35,8 +35,9 @@ namespace casualshoes.data_access_layer
                     int productSize = reader.GetInt32(4);
                     string categoryName = reader.GetString(5);
                     string productDescription = reader.GetString(6);
+                    string imgUrl = reader.GetString(7)+"1.jpg"; //we only want to see the main representative image when scrolling products
 
-                    Product product = new Product(id, productName, productPrice, productDescription, productSize, brandName, categoryName);
+                    Product product = new Product(id, productName, productPrice, productDescription, productSize, brandName, categoryName,imgUrl);
                     list.Add(product);
                 }
             }

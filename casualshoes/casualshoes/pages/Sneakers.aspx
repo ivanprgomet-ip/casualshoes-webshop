@@ -11,12 +11,12 @@
                 <article id="products-catalog">
                     <div class="product-list-container">
                         <div>
-                            <img src='<%#Eval("ImgUrl") %>1.jpg' width="250px" height="250px" />
+                            <img src='<%#Eval("ImgUrl") %>1.jpg'/>
                         </div>
-                        <div class="product-list-table-child">
+                        <div>
                             <%#Eval("ProductName") %>
                         </div>
-                        <div class="product-list-table-child">
+                        <div>
                             <%#Eval("ProductPrice") %>
                         </div>
                     </div>

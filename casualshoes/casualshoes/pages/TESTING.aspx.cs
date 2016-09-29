@@ -37,7 +37,9 @@ namespace casualshoes.pages
                 sb.Append(string.Format(
                     @"<table class='ProductsPanel'>
                     <tr>
-                        <th rowspan='6' width='150px'><img runat='server' src='' /></th>
+                        <th rowspan='6' width='150px'>
+                            <img runat='server' src='{6}' />
+                        </th>
 
                         <th width='50px'>Name: </th>
                         <td>{0}</td>
@@ -62,7 +64,7 @@ namespace casualshoes.pages
                          <th>category: </th>
                         <td>{5}</td>
                     </tr>
-                </table>",p.price,p.name,p.productBrand,p.description,p.size,p.productCategory));
+                </table>",p.price,p.name,p.productBrand,p.description,p.size,p.productCategory,p.imgUrl));
             }
             lbl_output.Text = sb.ToString();
         }

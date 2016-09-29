@@ -238,8 +238,12 @@ input#ContentPlaceHolder_txt_fullname {
 }
 
 
-
 /*TESTING.ASPX*/
+<<<<<<< HEAD
+.ProductsPanel img{
+    border:1px solid black;
+}
+=======
 #ProductsPanel{
     background-color:blue;
 }
@@ -267,3 +271,4 @@ input#ContentPlaceHolder_txt_fullname {
      height:auto;
 }
 
+>>>>>>> premaster
