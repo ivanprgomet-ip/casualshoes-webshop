@@ -182,7 +182,11 @@ footer{
 
     padding-bottom:15px;
 }
-#product-details-img-large{
+.slides {
+    display:none
+
+}
+.product-details-img-large{
     width:500px;
 
     padding-left:15px;
@@ -231,6 +235,7 @@ footer{
 }
 
 
+
 /*CONTACT.ASPX*/
 input#ContentPlaceHolder_txt_email,
 input#ContentPlaceHolder_txt_fullname {
@@ -258,16 +263,18 @@ input#ContentPlaceHolder_txt_fullname {
      display:flex;
      flex-direction:column;
 
-     width:235px;
+     width:180px;
      height:auto;
+     text-align: center;
+     background-color:white;
 
-     background-color:lightgray;
-
-     padding:5px;
-     margin:5px;
+     padding:10px;
+     margin-right:35px;
+     
+     margin-bottom:35px;
 }
 .product-list-container img{
-     width:235px;
+     width:180px;
      height:auto;
 }
 
