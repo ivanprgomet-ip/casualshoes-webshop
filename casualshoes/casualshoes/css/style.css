@@ -258,16 +258,17 @@ input#ContentPlaceHolder_txt_fullname {
      display:flex;
      flex-direction:column;
 
-     width:235px;
+     width:180px;
      height:auto;
 
-     background-color:lightgray;
+     background-color:white;
 
-     padding:5px;
-     margin:5px;
+     padding:10px;
+     margin-right:35px;
+     margin-bottom:35px;
 }
 .product-list-container img{
-     width:235px;
+     width:180px;
      height:auto;
 }
 
