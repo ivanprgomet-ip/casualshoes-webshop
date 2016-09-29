@@ -92,6 +92,14 @@ header{
     font: 18px;
     color: #504332;
 }
+#Search{
+    color:#484644;
+    background:none;
+    border: thin;
+    border-color: #504332;
+    border-style: solid;
+    font-size: 16px;
+}
 
 /*FOOTER*/
 footer{
