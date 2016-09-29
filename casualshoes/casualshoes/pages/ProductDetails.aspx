@@ -56,9 +56,9 @@
 <br />
         </ItemTemplate>
         </asp:DataList>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CasualShoesDBConnectionString %>" SelectCommand="SELECT DISTINCT * FROM [Product] WHERE ([ProductId] = @ProductId)">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CasualShoesDBConnectionString %>" SelectCommand="SELECT DISTINCT * FROM [Product] WHERE ([ProductId] = @Product)">
             <SelectParameters>
-                <asp:Parameter DefaultValue="1" Name="ProductId" Type="Int32" />
+                <asp:QueryStringParameter Name="Product" QueryStringField="ProductId" DbType="Int32"/>
             </SelectParameters>
         </asp:SqlDataSource>
 
