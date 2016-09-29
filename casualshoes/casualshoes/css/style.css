@@ -182,7 +182,11 @@ footer{
 
     padding-bottom:15px;
 }
-#product-details-img-large{
+.slides {
+    display:none
+
+}
+.product-details-img-large{
     width:500px;
 
     padding-left:15px;
@@ -229,6 +233,7 @@ footer{
 #product-details-specs-section div{
     margin-top:10px;
 }
+
 
 
 /*CONTACT.ASPX*/

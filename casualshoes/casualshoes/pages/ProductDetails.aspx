@@ -9,17 +9,19 @@
         <section id="product-details-images-section">
             <aside>
                 <figure>
-                    <img src='<%#Eval("ImgUrl") %>1.jpg' class="product-details-img-small" />
+                    <img src='<%#Eval("ImgUrl") %>1.jpg' class="switch product-details-img-small" onclick="currentDiv(1)" />
                 </figure>
                 <figure>
-                    <img src='<%#Eval("ImgUrl") %>2.jpg' class="product-details-img-small" />
+                    <img src='<%#Eval("ImgUrl") %>2.jpg' class="switch product-details-img-small" onclick="currentDiv(2)" />
                 </figure>
                 <figure>
-                    <img src='<%#Eval("ImgUrl") %>3.jpg' class="product-details-img-small" />
+                    <img src='<%#Eval("ImgUrl") %>3.jpg' class="switch product-details-img-small" onclick="currentDiv(3)" />
                 </figure>
             </aside>
             <figure>
-                <img src='<%#Eval("ImgUrl") %>1.jpg' id="product-details-img-large" />
+                <img src='<%#Eval("ImgUrl") %>1.jpg' class="product-details-img-large slides" />
+                <img src='<%#Eval("ImgUrl") %>2.jpg' class="product-details-img-large slides" />
+                <img src='<%#Eval("ImgUrl") %>3.jpg' class="product-details-img-large slides" />
             </figure>
         </section>
                 <section id="product-details-specs-section">
@@ -60,7 +62,31 @@
             </SelectParameters>
         </asp:SqlDataSource>
 
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  var dots = document.getElementsByClassName("switch");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+
+}
+</script>
     
 
        
