@@ -228,7 +228,7 @@ footer{
         padding: 7px 10% 7px 8px;
         
 }
-#product-details-specs-section input[type=submit]{
+input#ContentPlaceHolder_DataList1_btn_addToCart_0{
         width: 277px;
         height:37px;
         letter-spacing:.1em;
@@ -237,6 +237,9 @@ footer{
         border:none;
         cursor:pointer; 
         background-color:lightgreen;
+}
+section#product-details-specs-section {
+    margin-left: 45px;
 }
 #product-details-specs-section div{
     margin-top:10px;
