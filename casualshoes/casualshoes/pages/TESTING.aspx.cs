@@ -57,14 +57,10 @@ namespace casualshoes.pages
                         <td>{3}</td>
                     </tr>
                     <tr>
-                         <th>size: </th>
+                         <th>category: </th>
                         <td>{4}</td>
                     </tr>
-                    <tr>
-                         <th>category: </th>
-                        <td>{5}</td>
-                    </tr>
-                </table>",p.price,p.name,p.productBrand,p.description,p.size,p.productCategory,p.imgUrl));
+                </table>",p.price,p.name,p.productBrand,p.description,p.productCategory,p.imgUrl));
             }
             lbl_output.Text = sb.ToString();
         }
