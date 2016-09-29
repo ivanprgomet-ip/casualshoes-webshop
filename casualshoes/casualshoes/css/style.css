@@ -182,7 +182,11 @@ footer{
 
     padding-bottom:15px;
 }
-#product-details-img-large{
+.slides {
+    display:none
+
+}
+.product-details-img-large{
     width:500px;
 
     padding-left:15px;
@@ -231,8 +235,47 @@ footer{
 }
 
 
+
 /*CONTACT.ASPX*/
 input#ContentPlaceHolder_txt_email,
 input#ContentPlaceHolder_txt_fullname {
     width: 100%;
 }
+
+
+/*TESTING.ASPX*/
+<<<<<<< HEAD
+.ProductsPanel img{
+    border:1px solid black;
+}
+=======
+#ProductsPanel{
+    background-color:blue;
+}
+
+/*Product list pages - sneakers,boots...*/
+.product-catalog-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.product-list-container{
+     display:flex;
+     flex-direction:column;
+
+     width:180px;
+     height:auto;
+     text-align: center;
+     background-color:white;
+
+     padding:10px;
+     margin-right:35px;
+     
+     margin-bottom:35px;
+}
+.product-list-container img{
+     width:180px;
+     height:auto;
+}
+
+>>>>>>> premaster
