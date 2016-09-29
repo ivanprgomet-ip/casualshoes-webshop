@@ -95,6 +95,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\style.css" />
+    <Content Include="images\brands\birkenstock\b.png" />
+    <Content Include="images\brands\clarks\b.png" />
+    <Content Include="images\brands\colehaan\b.png" />
+    <Content Include="images\brands\dansko\b.png" />
+    <Content Include="images\brands\haflinger\b.png" />
+    <Content Include="images\brands\johnstonmurphy\b.png" />
+    <Content Include="images\brands\josefsejbel\b.png" />
     <Content Include="images\jpeg\brands.jpg" />
     <Content Include="images\jpeg\mainbanner.jpg" />
     <Content Include="images\products\boot.png" />
