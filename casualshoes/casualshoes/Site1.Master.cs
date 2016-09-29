@@ -13,12 +13,17 @@ namespace casualshoes
         public string LoginAndWelcome
         {
             get { return this.fig_login_welcome.InnerText; }
-            set { this.fig_login_welcome.InnerText= value; }
+            set { this.fig_login_welcome.InnerText = value; }
         }
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public void Search_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/pages/SearchResult.aspx?Term=" + HttpUtility.UrlEncode(SearchBoxID.Text));
         }
     }
 }

@@ -1,6 +1,6 @@
-﻿<%@ Page Title="Kängor & Boots" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Boots.aspx.cs" Inherits="casualshoes.WebForm5" %>
+﻿<%@ Page Title="Sandaler" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Sandals.aspx.cs" Inherits="casualshoes.WebForm4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
-    <h2>Boots</h2>
+    <h2>Sökresultat</h2>
 
     <article class="product-catalog-wrapper">
 
@@ -26,10 +26,9 @@
         </asp:ListView>
     </article>
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=.;Initial Catalog=CasualShoesDB;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [ProductId], [ImgUrl], [ProductPrice], [ProductName] FROM [Product] WHERE ([ProductCategoryId] = @ProductCategoryId AND [ProductSize] =  @ProductSize )">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=.;Initial Catalog=CasualShoesDB;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM Product WHERE ([ProductName] like '%' + @Name + '%' AND ProductSize = 40)">
         <SelectParameters>
-            <asp:Parameter DefaultValue="3" Name="ProductCategoryId" Type="Int32" />
-            <asp:Parameter DefaultValue="40" Name="ProductSize" Type="Int32" />
+            <asp:QueryStringParameter Name="Name" QueryStringField="Term" DbType="string"/>
         </SelectParameters>
     </asp:SqlDataSource>
 </asp:Content>

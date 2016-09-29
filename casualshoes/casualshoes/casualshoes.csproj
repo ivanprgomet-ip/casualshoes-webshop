@@ -212,6 +212,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="pages\SearchResult.aspx" />
     <Content Include="pages\TESTING.aspx" />
     <Content Include="pages\TESTING2.aspx" />
     <Content Include="Site1.Master" />
@@ -245,6 +246,13 @@
     <Compile Include="data_access_layer\ProductDAL.cs" />
     <Compile Include="models\Customer.cs" />
     <Compile Include="models\Product.cs" />
+    <Compile Include="pages\SearchResult.aspx.cs">
+      <DependentUpon>SearchResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\SearchResult.aspx.designer.cs">
+      <DependentUpon>SearchResult.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pages\TESTING.aspx.cs">
       <DependentUpon>TESTING.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
