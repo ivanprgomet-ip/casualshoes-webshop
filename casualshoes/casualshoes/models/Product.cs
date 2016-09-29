@@ -23,7 +23,6 @@ namespace casualshoes.models
             this.name = name;
             this.price = price;
             this.description = description;
-            
         }
 
         public Product(int id, string name, decimal price, string description, string productBrand, string productCategory)
