@@ -32,7 +32,7 @@
                         </figure>
                     </div>
                     <div>
-                        <asp:DropDownList runat="server">
+                        <asp:DropDownList ID="ddl_modelsize" runat="server">
                             <asp:ListItem Text="Välj Storlek" Value=""></asp:ListItem>
                             <asp:ListItem Value="36">36</asp:ListItem>
                             <asp:ListItem Value="37">37</asp:ListItem>
@@ -52,12 +52,16 @@
                             <asp:Label ID="Label2" runat="server" Text='<%# Eval("ProductPrice") %>' />kr</span>
                     </div>
                     <div>
-                        <asp:Button ID="btn_addToCart" runat="server" Text="Lägg i kundkorg" OnCommand="btn_addToCart_Command" CommandName="productId" CommandArgument='<%#Eval("ProductId") %>' /> <%--adds current productID into the method --%>
+                        <asp:Button ID="btn_addToCart" runat="server" Text="Lägg i kundkorg" OnCommand="btn_addToCart_Command" CommandName="AddingToCustomerCart" CommandArgument='<%#Eval("ProductId") + ","+Eval("ProductName") %>' />
+                        <%--adds current productID into the method --%>
                     </div>
                     <div>
                         <p>
                             <asp:Label ID="Label3" runat="server" Text='<%# Eval("ProductDescription") %>' />
                         </p>
+                    </div>
+                    <div>
+                        <asp:Label ID="lbl_addToCartMsg" runat="server" Text="Label"></asp:Label>
                     </div>
                 </section>
             </article>

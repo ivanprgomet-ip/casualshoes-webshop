@@ -245,6 +245,7 @@
     <Compile Include="data_access_layer\Connection.cs" />
     <Compile Include="data_access_layer\ProductDAL.cs" />
     <Compile Include="models\Customer.cs" />
+    <Compile Include="models\OrderDetail.cs" />
     <Compile Include="models\Product.cs" />
     <Compile Include="pages\SearchResult.aspx.cs">
       <DependentUpon>SearchResult.aspx</DependentUpon>
