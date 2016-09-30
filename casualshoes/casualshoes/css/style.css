@@ -250,6 +250,106 @@ input#ContentPlaceHolder_txt_fullname {
     width: 100%;
 }
 
+/*CART.ASPX*/
+#CartMainbody{
+    width:98%; 
+    padding:10px 10px 
+}
+#Pannelbody{
+    height:300px; 
+    width:100%;
+    border: 1px solid black; 
+    margin-top: 10px;
+}
+#TabBild{
+    text-align:left;
+}
+
+#TabArt{
+    text-align:left; width:70%;
+}
+
+#TabAnt{
+    text-align:left
+}
+#TabPris{
+    text-align:left
+}
+#TabBort{
+    text-align:left
+}
+
+.ProdImage{
+    text-align:left;
+}
+.ProdDetails{
+    text-align:left; 
+}
+.ProdAmount{
+    text-align:left;
+}
+.ProdPrice{
+    text-align:left; 
+}
+.ProdRemove{
+    text-align:center; 
+}
+
+#Pannelsumma{
+    height:90px ; width:100%;border: 1px solid black; margin-top: 10px;
+}
+#ShowCash{
+    width:30%; float:right;
+}
+#RowOfDeliveries{
+    height:125px ; width:100%;border: 1px solid black; margin-top: 10px;
+}
+.pading{
+    padding:10px;
+}
+.RowChoise{
+
+}
+.ChoiseInfo{
+    float:left; 
+    width:50%;
+    border: 1px solid black;
+    height:50px;
+}
+.ChoisePrice{
+    float:right; width:49%;
+}
+#FinnalBuy{
+    height:600px; width:100%;border:1px solid black; margin-top: 10px;
+}
+#cardpayrow{
+    height:170px ;border:1px solid black;  margin-bottom:10px;
+}
+#Internetbankapay{
+    height:170px; border:1px solid black;  margin-bottom:10px;
+}
+#Fakturapay{
+    border:1px solid black;  margin-bottom:10px;
+}
+.HalfRowLeft{
+    float:left; width:50%;
+}
+´#HalfRowRight{
+    float:right; width:50%;
+}
+.FullRow{
+    width:100%;
+}
+.BMargin{
+    margin-bottom:10px
+}
+.BmarginFloatL{
+    margin-bottom:10px; float:left;
+}
+.postnr{
+    width:40px;
+}
+
 
 /*TESTING.ASPX*/
 <<<<<<< HEAD

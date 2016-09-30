@@ -1,29 +1,35 @@
-﻿<%@ Page Title="Kundvarukorg" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Cart.aspx.cs" Inherits="casualshoes.WebForm9" %>
+﻿
+
+<%@ Page Title="Kundvarukorg" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Cart.aspx.cs" Inherits="casualshoes.WebForm9" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
     <h2>Shopping Cart</h2>
 
     
     
-        <div id="Mainbody" style=" width:98%; padding:10px 10px ">
+        <div id="CartMainbody">
 
             <h3>1. Kontrolera bestälning</h3>
 
             <div id="ListItems">
 
                 <%--comentar om at använda gridviwe--%>
+
+                
+
+
               
             
-            <div id="Pannelbody" style="height:300px; width:100%; border: 1px solid black; margin-top: 10px;"  >
+            <div id="Pannelbody" >
 
               
                 <table style="width:100%">
                     <thead>
                         <tr>
-                            <th style="text-align:left">bild</th>
-                            <th style="text-align:left; width:70%"; >artikel</th>
-                            <th style="text-align:left">antal</th>
-                            <th style="text-align:left">pris</th>
-                            <th style="text-align:left">tabort</th>
+                            <th id="TabBild" >Bild</th>
+                            <th id="TabArt" >artikel</th>
+                            <th id="TabAnt" >Antal</th>
+                            <th id="TabPris" >Pris</th>
+                            <th id="TabBort" >Tabort</th>
 
                         </tr>
                         
@@ -32,19 +38,19 @@
 
                     <tbody>
                         <tr class="articelrow">
-                            <td class="Image" style="text-align:left">Enbild</td>
-                            <td class="Details" style="text-align:left; width:70%">En beskrivning</td>
-                            <td class="Amount" style="text-align:left">En mängd</td>
-                            <td class="Price" style="text-align:left">Ett pris</td>
-                            <td class="Price" style="text-align:center">X</td>
+                            <td class="ProdImage" >Enbild</td>
+                            <td class="ProdDetails">En beskrivning</td>
+                            <td class="ProdAmount" >En mängd</td>
+                            <td class="ProdPrice" >Ett pris</td>
+                            <td class="ProdRemove" >X</td>
 
                         </tr>
                         <tr class="articelrow">
-                            <td class="Image" style="text-align:left">Enbild</td>
-                            <td class="Details" style="text-align:left; width:70%">En beskrivning</td>
-                            <td class="Amount" style="text-align:left">En mängd</td>
-                            <td class="Price" style="text-align:left">Ett pris</td>
-                            <td class="Price" style="text-align:center">X</td>
+                            <td class="ProdImage" >Enbild</td>
+                            <td class="ProdDetails">En beskrivning</td>
+                            <td class="ProdAmount" >En mängd</td>
+                            <td class="ProdPrice" >Ett pris</td>
+                            <td class="ProdRemove" >X</td>
 
                         </tr>
 
@@ -53,8 +59,8 @@
 
             </div>
             <h3></h3>
-        <div id="Pannelsumma" style=" height:90px ; width:100%;border: 1px solid black; margin-top: 10px;"  >
-            <table style="width:30%; float:right">
+        <div id="Pannelsumma" >
+            <table id="ShowCash" >
                 <tbody>
                     <tr>
                         <td>Posten</td>
@@ -79,14 +85,26 @@
         </div>
         </div>
              <h3>2. Välj leverans sät</h3>
-            <div id="SatLeverans" style=" height:90px ; width:100%;border: 1px solid black; margin-top: 10px;"  >
+            <div id="RowOfDeliveries"   >
 
-                <div id="pading2" style="padding:10px; ">
-                    <div id="Inforcol">
-                       <div style="float:left; width:50%;border: 1px solid black">
-                           <p>Välj hur producten ska levereras</p>
+                <div class="pading" >
+                    <div class="RowChoise">
+                       <div class="ChoiseInfo">
+                           <asp:CheckBox ID="CheckBox1" runat="server" />
+                           <label>Sättet 1 att leverar</label>
+                           
                        </div>
-                       <div style="float:right; width:49%">
+                       <div class="ChoisePrice">
+                           <p>Kostnad för leverans</p>
+                       </div>
+
+                     </div>
+                    <div class="RowChoise">
+                       <div class="ChoiseInfo">
+                           <asp:CheckBox ID="CheckBox2" runat="server" />
+                           <label>Sättet 2 att leverar</label>
+                       </div>
+                       <div class="ChoisePrice">
                            <p>Kostnad för leverans</p>
                        </div>
 
@@ -97,45 +115,45 @@
         </div>
 
               <h3>3. Slutför köp</h3>
-            <div id="Slutkop" style="height:600px; width:100%;border:1px solid black; margin-top: 10px;"  >
-                <div id="pading" style="padding:10px">
+            <div id="FinnalBuy" >
+                <div class="pading">
                     
-                    <div id="cardpayrow" style="height:170px ;border:1px solid black;  margin-bottom:10px">
+                    <div id="cardpayrow">
                         <h4>Använd kreditkort</h4>
-                       <div style="float:left; width:50%">
-                           <div class="row" style=" width:100%; ">
-                                <div class="form" style=" margin-bottom:10px">
+                       <div class="HalfRowLeft">
+                           <div class="FullRow">
+                                <div class="BMargin">
                                     <label>Förnamn</label>
                                     <input type="text"/>
                                 </div>
                            </div>
-                           <div class="row" style=" width:100%; ">
-                                <div class="form" style="margin-bottom:10px">
+                           <div class="FullRow">
+                                <div class="BMargin">
                                    <label>Gatuadress</label>
                                     <input type="text"/>
                                 </div>
                            </div>
-                           <div class="row" style=" width:100%; ">
-                                <div class="form" style=" margin-bottom:10px; float:left">
+                           <div class="FullRow">
+                                <div class="BmarginFloatL">
                                    <label>Postnr</label>
-                                    <input type="text" style="width:40px"/>
+                                    <input type="text" class="postnr"/>
                                 </div>
-                               <div class="form" style=" margin-bottom:10px; float:left">
+                               <div class="BmarginFloatL">
                                    <label>Postort</label>
                                     <input type="text"/>
                                 </div>
                            </div>   
                            
                        </div>
-                       <div style="float:right; width:50%">
-                            <div class="row" style=" width:100%; ">
-                                <div class="form" style="margin-bottom:10px">
+                       <div class="HalfRowRight">
+                            <div class="FullRow">
+                                <div class="BMargin">
                                    <label>E-postadres</label>
                                     <input type="text"/>
                                 </div>
                            </div> 
-                            <div class="row" style=" width:100%; ">
-                                <div class="form" style=" margin-bottom:10px">
+                            <div class="FullRow">
+                                <div class="BMargin">
                                    <label>Mobiltelefon</label>
                                     <input type="text"/>
                                 </div>
@@ -145,47 +163,47 @@
                        </div>
 
                      </div>
-                    <div id="Fakturapay" style="border:1px solid black;  margin-bottom:10px">
+                    <div id="Fakturapay">
                         <h4>Använd faktura</h4>
 
                     </div>
 
-                    <div id="Internetbankapay" style="height:170px; border:1px solid black;  margin-bottom:10px">
+                    <div id="Internetbankapay">
                         <h4>Använd Internetbank</h4>
-                        <div style="float:left; width:50%">
-                           <div class="row" style=" width:100%; ">
-                                <div class="form" style=" margin-bottom:10px">
+                        <div class="HalfRowLeft">
+                           <div class="FullRow">
+                                <div class="BMargin">
                                     <label>Förnamn</label>
                                     <input type="text"/>
                                 </div>
                            </div>
-                           <div class="row" style=" width:100%; ">
-                                <div class="form" style=" margin-bottom:10px">
+                           <div class="FullRow">
+                                <div class="BMargin">
                                    <label>Gatuadress</label>
                                     <input type="text"/>
                                 </div>
                            </div>
-                           <div class="row" style=" width:100%; ">
-                                <div class="form" style=" margin-bottom:10px; float:left">
+                           <div class="FullRow">
+                                <div class="BmarginFloatL">
                                    <label>Postnr</label>
-                                    <input type="text" style="width:40px"/>
+                                    <input type="text" class="postnr"/>
                                 </div>
-                               <div class="form" style="margin-bottom:10px; float:left">
+                               <div class="BmarginFloatL">
                                    <label>Postort</label>
                                     <input type="text"/>
                                 </div>
                            </div>   
                            
                        </div>
-                       <div style="float:right; width:50%">
-                            <div class="row" style=" width:100%; ">
-                                <div class="form" style=" margin-bottom:10px">
+                       <div class="HalfRowRight">
+                            <div class="FullRow">
+                                <div class="BMargin">
                                    <label>E-postadres</label>
                                     <input type="text"/>
                                 </div>
                            </div> 
-                            <div class="row" style=" width:100%; ">
-                                <div class="form" style=" margin-bottom:10px">
+                            <div class="FullRow">
+                                <div class="BMargin">
                                    <label>Mobiltelefon</label>
                                     <input type="text"/>
                                 </div>
@@ -194,8 +212,9 @@
                             
                        </div>
                     </div>
-                    <input type="button" value="Bekräfta köp"/>
                     
+                    <asp:Button ID="Button1" runat="server" Text="Igenomför köp" />
+
                 </div>
         </div>
 
