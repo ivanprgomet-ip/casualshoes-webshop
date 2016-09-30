@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
     <article id="HomeBannerId">
-        <img src="../images/jpeg/mainbanner.jpg" alt="main banner of site" />
+      <a href="http://localhost:40582/pages/ProductDetails.aspx?productID=8"><img src="../images/jpeg/banner-main.jpg" alt="main banner" /></a>
     </article>
     <article id="PopularProductsId">
         <h1 class="header-banner">Mest Populära</h1>
