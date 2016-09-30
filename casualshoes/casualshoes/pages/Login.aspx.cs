@@ -21,10 +21,16 @@ namespace casualshoes
         {
             Customer customer = Connection.LoginCustomer(txt_login_mail.Text, txt_login_password.Text);
 
-            if (customer == null)
-                lbl_login_msg.Text = "Login failed";
+            if (customer != null)
+            {
+                //store login variables in session
+                Session["login"] = customer.Firstname;
+                Response.Redirect("~/pages/Home.aspx");
+            }
             else
-                lbl_login_msg.Text = "Welcome " + customer.Firstname+" "+ customer.Lastname+"!";
+            {
+                lbl_login_msg.Text = "Login failed";
+            }
 
 
 
