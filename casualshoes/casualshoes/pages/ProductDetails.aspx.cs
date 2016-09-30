@@ -24,24 +24,20 @@ namespace casualshoes
         {
 
             //CHECK IF ANY (USER) IS LOGGED IN 
-
-            //CALL ORDERDETAILDAL METHOD THAT TAKES IN CURRENT CUSTOMERID, PRODUCTID, QUANTITY AND MODELSIZE
-
-            //SPLIT THE COMMANDARGUMENTS AND PLACE THEM IN THEIR OWN VARIABLES
+            //CREATE AN ORDERID FOR THE CUSTOMERID THAT CLICKED THE BUTTON
+            
             List<string> commandArgs = e.CommandArgument.ToString().Split(new char[] { ',' }).ToList();
 
-            //int orderid;
+            int orderid = 4;//ONLY TESTING PURPOSES
             int productid = Convert.ToInt32(commandArgs[0]);
             string productname = commandArgs[1];
-            int quantity;
-            int modelsize = Convert.ToInt32(DataList1.FindControl("ddl_modelsize"));
-            //OrderDetail newOrderDetail = new OrderDetail(orderid, productid, quantity, modelsize);
-            Response.Write("productid: " + productid + ", productname: " + productname);
+            int quantity = Convert.ToInt32(num_quantity.Value);
+            int modelsize = Convert.ToInt32(ddl_modelsize.SelectedValue);
+            OrderDetail newOrderDetail = new OrderDetail(orderid, productid, quantity, modelsize);
 
+            OrderDetailDAL.AddNewOrderDetail(newOrderDetail);
 
-
-
-
+            Response.Write($"orderid:{orderid}, productid: {productid}, quantity: {quantity}, modelsize: {modelsize}");
         }
     }
 }

@@ -32,22 +32,6 @@
                         </figure>
                     </div>
                     <div>
-                        <asp:DropDownList ID="ddl_modelsize" runat="server">
-                            <asp:ListItem Text="Välj Storlek" Value=""></asp:ListItem>
-                            <asp:ListItem Value="36">36</asp:ListItem>
-                            <asp:ListItem Value="37">37</asp:ListItem>
-                            <asp:ListItem Value="38">38</asp:ListItem>
-                            <asp:ListItem Value="39">39</asp:ListItem>
-                            <asp:ListItem Value="40">40</asp:ListItem>
-                            <asp:ListItem Value="41">41</asp:ListItem>
-                            <asp:ListItem Value="42">42</asp:ListItem>
-                        </asp:DropDownList>
-                    </div>
-                    <div>
-                        <asp:Label ID="Label1" runat="server" Text="Antal:"></asp:Label>
-                        <input type="number" id="num_quantity" min="1" max="10" value="1" />
-                    </div>
-                    <div>
                         <span id="product-price">
                             <asp:Label ID="Label2" runat="server" Text='<%# Eval("ProductPrice") %>' />kr</span>
                     </div>
@@ -68,6 +52,25 @@
             <br />
         </ItemTemplate>
     </asp:DataList>
+    <section>
+        <div>
+            <asp:DropDownList ID="ddl_modelsize" runat="server">
+                <%--<asp:ListItem Text="Välj Storlek" Value=""></asp:ListItem>--%>
+                <asp:ListItem Value="36">36</asp:ListItem>
+                <asp:ListItem Value="37">37</asp:ListItem>
+                <asp:ListItem Value="38">38</asp:ListItem>
+                <asp:ListItem Value="39">39</asp:ListItem>
+                <asp:ListItem Value="40">40</asp:ListItem>
+                <asp:ListItem Value="41">41</asp:ListItem>
+                <asp:ListItem Value="42">42</asp:ListItem>
+            </asp:DropDownList>
+        </div>
+        <div>
+            <asp:Label ID="Label1" runat="server" Text="Antal:"></asp:Label>
+            <input type="number" id="num_quantity" min="1" max="10" value="1" runat="server" />
+        </div>
+    </section>
+
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CasualShoesDBConnectionString %>" SelectCommand="SELECT DISTINCT * FROM [Product] WHERE ([ProductId] = @Product)">
         <SelectParameters>
             <asp:QueryStringParameter Name="Product" QueryStringField="ProductId" DbType="Int32" />
