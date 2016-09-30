@@ -19,8 +19,9 @@ namespace casualshoes
 
         protected void btn_addToCart_Command(object sender, CommandEventArgs e)
         {
+            //first, check if user is logged in, if not, nothing can be added to cart
             //takes in the current products ID
-            Response.Write(e.CommandArgument.ToString());
+            Response.Write("You have added productID: "+e.CommandArgument.ToString());
         }
     }
 }
