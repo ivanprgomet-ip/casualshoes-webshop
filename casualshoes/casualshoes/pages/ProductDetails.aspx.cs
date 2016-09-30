@@ -16,5 +16,11 @@ namespace casualshoes
 
             
         }
+
+        protected void btn_addToCart_Command(object sender, CommandEventArgs e)
+        {
+            //takes in the current products ID
+            Response.Write(e.CommandArgument.ToString());
+        }
     }
 }

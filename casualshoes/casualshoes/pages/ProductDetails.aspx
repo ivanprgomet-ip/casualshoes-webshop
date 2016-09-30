@@ -52,7 +52,7 @@
                             <asp:Label ID="Label2" runat="server" Text='<%# Eval("ProductPrice") %>' />kr</span>
                     </div>
                     <div>
-                        <asp:Button ID="btn_addToCart" runat="server" Text="Lägg i kundkorg" />
+                        <asp:Button ID="btn_addToCart" runat="server" Text="Lägg i kundkorg" OnCommand="btn_addToCart_Command" CommandName="productId" CommandArgument='<%#Eval("ProductId") %>' /> <%--adds current productID into the method --%>
                     </div>
                     <div>
                         <p>
