@@ -289,4 +289,7 @@ input#ContentPlaceHolder_txt_fullname {
      height:auto;
 }
 
->>>>>>> premaster
+.sort{
+    float: right;
+}
+
