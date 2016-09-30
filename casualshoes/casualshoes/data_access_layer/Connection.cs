@@ -21,13 +21,14 @@ namespace casualshoes.data_access_layer
             comm = new SqlCommand("", conn);
         }
 
+        //LOGIN A USER
         public static Customer LoginCustomer(string EmailUsername, string password)
         {
             //Check if user exists
             string sqlQuery = string.Format(@"SELECT COUNT(CustomerId)
                             FROM Customer
                             WHERE EmailUsername = '{0}'"
-                            ,EmailUsername);
+                            , EmailUsername);
             comm.CommandText = sqlQuery;
 
             try
@@ -42,7 +43,7 @@ namespace casualshoes.data_access_layer
                     comm.CommandText = sqlQuery;
                     string dbPassword = comm.ExecuteScalar().ToString();
 
-                    if(dbPassword == password)
+                    if (dbPassword == password)
                     {
                         //Login Success! usernames and passwords match!
                         //retrieve further information about the user directly from database
@@ -77,11 +78,44 @@ namespace casualshoes.data_access_layer
                     return null;
                 }
             }
-            finally 
+            finally
             {
                 conn.Close();
             }
 
         }
+        //REGISTER NEW USER
+        public static string RegisterNewCustomer(Customer NewCustomer)
+        {
+            //Check if user already exists
+            string sqlQuery = string.Format(@"SELECT COUNT(CustomerId) FROM Customer WHERE EmailUsername = '{0}'", NewCustomer.EmailUsername);
+            comm.CommandText = sqlQuery;
+
+            try
+            {
+                conn.Open();
+                int amoutOfUsers = (int)comm.ExecuteScalar();
+
+                if (amoutOfUsers < 1)
+                {
+                    //user doesn't exist, register new user (emailusername is available)
+                    sqlQuery = $"INSERT INTO Customer(Firstname, Lastname, Adress, City, ZipCode, Password, EmailUsername) Values('{NewCustomer.Firstname}','{NewCustomer.Lastname}','{NewCustomer.Adress}','{NewCustomer.City}','{NewCustomer.ZipCode}','{NewCustomer.Password}','{NewCustomer.EmailUsername}')";
+                    comm.CommandText = sqlQuery;
+
+                    comm.ExecuteNonQuery();
+                    return "Registration successfully completed";
+                }
+                else
+                {
+                    //user exists 
+                    return "A user with that Email/Username allready exists";
+                }
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
     }
 }

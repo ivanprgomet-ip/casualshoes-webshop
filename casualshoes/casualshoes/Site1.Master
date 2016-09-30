@@ -30,9 +30,6 @@
                         </figure>
                         <figure>
                             <img src="../images/png/user.png" />
-                           <%-- <figcaption class="icon-text">
-                                <a href="~/pages/Login.aspx" id="fig_login_welcome" runat="server">Logga In</a>
-                            </figcaption>--%>
                             <asp:Label ID="lbl_login" runat="server" Text="Label"></asp:Label>
                             <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">LinkButton</asp:LinkButton>
                         </figure>
