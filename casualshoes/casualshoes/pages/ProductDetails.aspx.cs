@@ -36,7 +36,7 @@ namespace casualshoes
 
                     //RUNS FIRST TIME A PRODUCT IS ADDED TO CART
                     List<string> commandArgs = e.CommandArgument.ToString().Split(new char[] { ',' }).ToList();
-                    int orderid = (int)Session["orderid"];//ONLY TESTING PURPOSES
+                    int orderid = (int)Session["orderid"];
                     int productid = Convert.ToInt32(commandArgs[0]);
                     string productname = commandArgs[1];
                     int quantity = Convert.ToInt32(num_quantity.Value);
@@ -48,7 +48,7 @@ namespace casualshoes
                 {
                     //RUNS EVERY TIME EXCEPT FIRST TIME A PRODUCT IS ADDED TO CART
                     List<string> commandArgs = e.CommandArgument.ToString().Split(new char[] { ',' }).ToList();
-                    int orderid = (int)Session["orderid"];//ONLY TESTING PURPOSES
+                    int orderid = (int)Session["orderid"];
                     int productid = Convert.ToInt32(commandArgs[0]);
                     string productname = commandArgs[1];
                     int quantity = Convert.ToInt32(num_quantity.Value);
