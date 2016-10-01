@@ -12,9 +12,9 @@ namespace casualshoes
         protected void Page_Load(object sender, EventArgs e)
         {
             //check if a user is logged in
-            if(Session["login"] != null)
+            if(Session["customername"] != null)
             {
-                lbl_login.Text = "Welcome " + Session["login"].ToString();
+                lbl_login.Text = "Welcome " + Session["customername"].ToString();
                 lbl_login.Visible = true;
                 LinkButton1.Text = "Logout";
             }

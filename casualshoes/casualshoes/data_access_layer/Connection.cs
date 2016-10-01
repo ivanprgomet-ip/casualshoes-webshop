@@ -21,7 +21,7 @@ namespace casualshoes.data_access_layer
             comm = new SqlCommand("", conn);
         }
 
-        //LOGIN A USER
+
         public static Customer LoginCustomer(string EmailUsername, string password)
         {
             //Check if user exists
@@ -84,7 +84,6 @@ namespace casualshoes.data_access_layer
             }
 
         }
-        //REGISTER NEW USER
         public static string RegisterNewCustomer(Customer NewCustomer)
         {
             //Check if user already exists
@@ -116,6 +115,5 @@ namespace casualshoes.data_access_layer
                 conn.Close();
             }
         }
-
     }
 }

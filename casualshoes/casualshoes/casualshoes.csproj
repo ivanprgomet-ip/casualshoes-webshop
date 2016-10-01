@@ -244,6 +244,7 @@
     <Compile Include="data_access_layer\Admin.cs" />
     <Compile Include="data_access_layer\Connection.cs" />
     <Compile Include="data_access_layer\OrderDetailDAL.cs" />
+    <Compile Include="data_access_layer\OrderHeadDAL.cs" />
     <Compile Include="data_access_layer\ProductDAL.cs" />
     <Compile Include="models\Customer.cs" />
     <Compile Include="models\OrderDetail.cs" />

@@ -24,7 +24,8 @@ namespace casualshoes
             if (customer != null)
             {
                 //store login variables in session
-                Session["login"] = customer.Firstname;
+                Session["customername"] = customer.Firstname;
+                Session["customerId"] = customer.customerid;//storing customerid so we know who is adding products and which order to display in the cart
                 Response.Redirect("~/pages/Home.aspx");
             }
             else
