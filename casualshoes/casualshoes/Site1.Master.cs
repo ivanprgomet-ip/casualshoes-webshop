@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using casualshoes.data_access_layer;
+
 namespace casualshoes
 {
     public partial class Site1 : System.Web.UI.MasterPage
@@ -34,6 +36,7 @@ namespace casualshoes
             else
             {
                 //user logs out
+                //OrderDetailDAL.ClearOrderDetails((int)Session["customerId"]);//clear orderdetails before clearing session variables used to clear orderdetails!
                 Session.Clear();
                 Response.Redirect("~/pages/Home.aspx");
             }
