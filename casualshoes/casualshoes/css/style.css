@@ -39,7 +39,7 @@ header{
 }
     #header-top-nav{
         display:flex;
-        align-items:baseline;
+        /*align-items:baseline;*/
         justify-content: space-between;
         padding:15px;
 

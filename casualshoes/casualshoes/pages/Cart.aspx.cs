@@ -11,7 +11,12 @@ namespace casualshoes
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //if someone is logged in then show the cart, else redirect to login page
+            if ((string)Session["customername"] == null)
+            {
+                //redirects anonymous customers to login before adding to cart
+                Response.Redirect("~/pages/Login.aspx");
+            }
         }
     }
 }
