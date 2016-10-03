@@ -19,7 +19,7 @@
                             <img src='<%#Eval("ImgUrl") %>3.jpg' class="switch product-details-img-small" onclick="currentDiv(3)" />
                         </figure>
                     </aside>
-                    <figure>
+                    <figure id="product-details-sideimages">
                         <img src='<%#Eval("ImgUrl") %>1.jpg' class="product-details-img-large slides" />
                         <img src='<%#Eval("ImgUrl") %>2.jpg' class="product-details-img-large slides" />
                         <img src='<%#Eval("ImgUrl") %>3.jpg' class="product-details-img-large slides" />
@@ -39,7 +39,6 @@
                     </div>
                     <div>
                         <asp:Button ID="btn_addToCart" runat="server" Text="Lägg i kundkorg" OnCommand="btn_addToCart_Command" CommandName="AddingToCustomerCart" CommandArgument='<%#Eval("ProductId") + ","+Eval("ProductName") %>' />
-                        <%--adds current productID into the method --%>
                     </div>
                     <div>
                         <p>
@@ -57,7 +56,6 @@
         </div>
         <div>
             <asp:DropDownList ID="ddl_modelsize" runat="server">
-                <%--<asp:ListItem Text="Välj Storlek" Value=""></asp:ListItem>--%>
                 <asp:ListItem Value="36">36</asp:ListItem>
                 <asp:ListItem Value="37">37</asp:ListItem>
                 <asp:ListItem Value="38">38</asp:ListItem>
@@ -72,7 +70,6 @@
             <input type="number" id="num_quantity" min="1" max="10" value="1" runat="server" />
         </div>
     </section>
-
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CasualShoesDBConnectionString %>" SelectCommand="SELECT DISTINCT * FROM [Product] WHERE ([ProductId] = @Product)">
         <SelectParameters>
             <asp:QueryStringParameter Name="Product" QueryStringField="ProductId" DbType="Int32" />
@@ -110,8 +107,4 @@ FROM Product INNER JOIN Brand ON Product.ProductBrandId = Brand.BrandId WHERE Pr
 
         }
     </script>
-
-
-
-
 </asp:Content>

@@ -184,11 +184,15 @@ footer{
 #product-details-container figure{
     align-items: flex-start;
 }
-.product-details-img-small{
+.switch{
     width:100px;
     height:auto;
 
-    padding-bottom:15px;
+    margin-bottom: 15px;
+    border:2px solid rgba(122, 84, 38, 0.00);
+}
+img.switch:hover{
+    border:2px solid rgba(122, 84, 38, 0.40);
 }
 .slides {
     display:none
@@ -218,7 +222,6 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-
 #product-details-specs-section select{
         width: 277px;
         height:37px;
@@ -251,17 +254,6 @@ section#product-details-specs-section {
 input#ContentPlaceHolder_txt_email,
 input#ContentPlaceHolder_txt_fullname {
     width: 100%;
-}
-
-
-/*TESTING.ASPX*/
-<<<<<<< HEAD
-.ProductsPanel img{
-    border:1px solid black;
-}
-=======
-#ProductsPanel{
-    background-color:blue;
 }
 
 /*Product list pages - sneakers,boots...*/
