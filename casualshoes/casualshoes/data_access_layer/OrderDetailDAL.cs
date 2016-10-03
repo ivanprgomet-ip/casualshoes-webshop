@@ -15,10 +15,17 @@ namespace casualshoes.data_access_layer
             //adds new product into orderdetail table for specific orderid
             string insertOrderDetailQuery = $"INSERT INTO OrderDetail VALUES({newOrderDetail.orderid},{newOrderDetail.productid},{newOrderDetail.quantity},{newOrderDetail.modelsize})";
 
-            Connection.comm.CommandText = insertOrderDetailQuery;
-            Connection.conn.Open();
-            Connection.comm.ExecuteNonQuery();
-            Connection.conn.Close();
+            try
+            {
+                Connection.comm.CommandText = insertOrderDetailQuery;
+                Connection.conn.Open();
+                Connection.comm.ExecuteNonQuery();
+            }
+            finally
+            {
+                Connection.conn.Close();
+            }
+          
         }
         //internal static void ClearOrderDetails(int orderid)
         //{
