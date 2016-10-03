@@ -6,21 +6,22 @@
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" DataKeyNames="ProductId">
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" />
-                <asp:BoundField DataField="ProductId" HeaderText="ProductId" SortExpression="ProductId" InsertVisible="False" ReadOnly="True" />
+                <%--<asp:BoundField DataField="ProductId" HeaderText="ProductId" SortExpression="ProductId" InsertVisible="False" ReadOnly="True" />--%>
                 <asp:BoundField DataField="BrandName" HeaderText="BrandName" SortExpression="BrandName" />
                 <asp:BoundField DataField="ProductName" HeaderText="ProductName" SortExpression="ProductName" />
                 <asp:BoundField DataField="ProductPrice" HeaderText="ProductPrice" SortExpression="ProductPrice" />
-                <asp:BoundField DataField="ProductDescription" HeaderText="ProductDescription" SortExpression="ProductDescription" />
+                <%--<asp:BoundField DataField="ProductDescription" HeaderText="ProductDescription" SortExpression="ProductDescription" />--%>
                 <asp:BoundField DataField="CategoryName" HeaderText="CategoryName" SortExpression="CategoryName" />
                 <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
                 <asp:BoundField DataField="ModelSize" HeaderText="ModelSize" SortExpression="ModelSize" />
-                <asp:BoundField DataField="OrderId" HeaderText="OrderId" SortExpression="OrderId" InsertVisible="False" ReadOnly="True" />
-                <asp:BoundField DataField="CustomerId" HeaderText="CustomerId" SortExpression="CustomerId" />
+                <%--<asp:BoundField DataField="OrderId" HeaderText="OrderId" SortExpression="OrderId" InsertVisible="False" ReadOnly="True" />--%>
+                <%--<asp:BoundField DataField="CustomerId" HeaderText="CustomerId" SortExpression="CustomerId" />--%>
+                <asp:BoundField DataField="product Total" HeaderText="product Total" SortExpression="product Total" />
             </Columns>
         </asp:GridView>
     </p>
     <p>
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:CasualShoesDBConnectionString %>" SelectCommand="SELECT Product.ProductId, Brand.BrandName, Product.ProductName, Product.ProductPrice, Product.ProductDescription, Category.CategoryName, OrderDetail.Quantity, OrderDetail.ModelSize, OrderHead.OrderId, OrderHead.CustomerId
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:CasualShoesDBConnectionString %>" SelectCommand="SELECT Product.ProductId, Brand.BrandName, Product.ProductName, Product.ProductPrice, Product.ProductDescription, Category.CategoryName, OrderDetail.Quantity, OrderDetail.ModelSize, OrderHead.OrderId, OrderHead.CustomerId, (Product.ProductPrice*Quantity) as [product Total]
 					FROM Category INNER JOIN
 					Brand INNER JOIN
 					OrderHead INNER JOIN
@@ -38,6 +39,11 @@
         </asp:SqlDataSource>
     </p>
     <table>
+        <tr>
+            <td>
+                <asp:Label ID="lbl_totalprice" runat="server" Text="total price goes here"></asp:Label>
+            </td>
+        </tr>
         <tr>
             <td>
                 <asp:HyperLink ID="hplnk_BackToShop" runat="server" NavigateUrl='~/pages/Home.aspx'>Tillbaka till Webshopen</asp:HyperLink>

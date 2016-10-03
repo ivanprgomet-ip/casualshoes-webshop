@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using casualshoes.data_access_layer;
+
 namespace casualshoes
 {
     public partial class WebForm9 : System.Web.UI.Page
@@ -17,6 +19,9 @@ namespace casualshoes
                 //redirects anonymous customers to login before adding to cart
                 Response.Redirect("~/pages/Login.aspx");
             }
+
+            //show total price 
+            lbl_totalprice.Text = OrderDetailDAL.ReturnTotalPrice()
         }
 
        
