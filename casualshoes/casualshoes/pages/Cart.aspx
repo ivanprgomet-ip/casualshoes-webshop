@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Kundvarukorg" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeFile="Cart.aspx.cs" Inherits="casualshoes.WebForm9" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
-    <h2>Din Kundvarukorg</h2>
+    <h2 class="h2-center">Din Kundvarukorg</h2>
     <p>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" DataKeyNames="ProductId" OnRowDataBound="GridView1_RowDataBound" ShowFooter="True">
             <Columns>

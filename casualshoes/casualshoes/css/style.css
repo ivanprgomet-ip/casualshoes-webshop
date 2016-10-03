@@ -310,4 +310,8 @@ table#ContentPlaceHolder_GridView1 {
 
     display:flex;
     justify-content:space-around;
+    margin: 25px 0;
+}
+.h2-center{
+    text-align:center;
 }
