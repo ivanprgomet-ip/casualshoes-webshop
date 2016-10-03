@@ -35,7 +35,7 @@ namespace casualshoes
             else if(e.Row.RowType == DataControlRowType.Footer)
             {
 
-                e.Row.Cells[1].Text = "Total";
+                e.Row.Cells[1].Text = "Att Betala: ";
                 e.Row.Cells[1].Font.Bold = true;
 
                 e.Row.Cells[7].Text = totalPrice.ToString()+":-";
