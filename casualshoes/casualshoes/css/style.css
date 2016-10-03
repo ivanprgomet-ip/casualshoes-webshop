@@ -294,6 +294,8 @@ input#ContentPlaceHolder_txt_fullname {
 }
 
 .sort{
-    float: right;
+    float: left;
+    margin-bottom: 10px;
+    
 }
 

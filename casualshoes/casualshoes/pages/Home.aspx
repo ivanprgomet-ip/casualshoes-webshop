@@ -64,7 +64,7 @@
                            <%#Eval("ProductName") %>
                         </div>
                         <div>
-                            <%#Eval("ProductPrice") %>
+                            <%#Eval("RoundedPrice") %>
                         </div></a>
                     </div>
                 </article>
@@ -73,7 +73,7 @@
         </asp:ListView>
     </article>
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=.;Initial Catalog=CasualShoesDB;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [ProductId], [ImgUrl], [ProductPrice], [ProductName] FROM [Product] WHERE ([ProductCategoryId] = @ProductCategoryId)">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=.;Initial Catalog=CasualShoesDB;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [ProductId], [ImgUrl], [ProductPrice], FORMAT(ProductPrice, 'C', 'sv-SE') AS RoundedPrice, [ProductName] FROM [Product] WHERE ([ProductCategoryId] = @ProductCategoryId)">
         <SelectParameters>
             <asp:Parameter DefaultValue="1" Name="ProductCategoryId" Type="Int32" />
        <%-- <asp:Parameter DefaultValue="4" Name="Value" Type="Int32" />--%>
