@@ -36,7 +36,6 @@ namespace casualshoes
             else
             {
                 //user logs out
-                //OrderDetailDAL.ClearOrderDetails((int)Session["customerId"]);//clear orderdetails before clearing session variables used to clear orderdetails!
                 Session.Clear();
                 Response.Redirect("~/pages/Home.aspx");
             }

@@ -44,7 +44,7 @@ namespace casualshoes
                     OrderDetail newOrderDetail = new OrderDetail(orderid, productid, quantity, modelsize);
                     OrderDetailDAL.AddNewOrderDetail(newOrderDetail);
                 }
-                else 
+                else
                 {
                     //RUNS EVERY TIME EXCEPT FIRST TIME A PRODUCT IS ADDED TO CART
                     List<string> commandArgs = e.CommandArgument.ToString().Split(new char[] { ',' }).ToList();

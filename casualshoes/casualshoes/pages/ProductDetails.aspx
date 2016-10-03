@@ -46,15 +46,15 @@
                             <asp:Label ID="Label3" runat="server" Text='<%# Eval("ProductDescription") %>' />
                         </p>
                     </div>
-                    <div>
-                        <asp:Label ID="lbl_addToCartMsg" runat="server" Text="Label"></asp:Label>
-                    </div>
                 </section>
             </article>
             <br />
         </ItemTemplate>
     </asp:DataList>
     <section>
+        <div>
+            <asp:Label ID="lbl_addToCartMsg" runat="server" Text=""></asp:Label>
+        </div>
         <div>
             <asp:DropDownList ID="ddl_modelsize" runat="server">
                 <%--<asp:ListItem Text="Välj Storlek" Value=""></asp:ListItem>--%>
