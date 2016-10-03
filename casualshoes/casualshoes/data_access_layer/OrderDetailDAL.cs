@@ -20,21 +20,21 @@ namespace casualshoes.data_access_layer
             Connection.comm.ExecuteNonQuery();
             Connection.conn.Close();
         }
-        internal static void ClearOrderDetails(int orderid)
-        {
-            //TODO: FIX THIS SQLQUERY DELETE STATEMENT, ITS NOT CORRECT, check if the orderid value is getting through into the sqlquery
-            string sqlQuery = string.Format($"DELETE FROM OrderDetail WHERE OrderId='{orderid}'");
-            Connection.comm.CommandText = sqlQuery;
+        //internal static void ClearOrderDetails(int orderid)
+        //{
+        //    //TODO: FIX THIS SQLQUERY DELETE STATEMENT, ITS NOT CORRECT, check if the orderid value is getting through into the sqlquery
+        //    string sqlQuery = string.Format($"DELETE FROM OrderDetail WHERE OrderId='{orderid}'");
+        //    Connection.comm.CommandText = sqlQuery;
 
-            try
-            {
-                Connection.conn.Open();
-                Connection.comm.ExecuteNonQuery();
-            }
-            finally
-            {
-                Connection.conn.Close();
-            }
-        }
+        //    try
+        //    {
+        //        Connection.conn.Open();
+        //        Connection.comm.ExecuteNonQuery();
+        //    }
+        //    finally
+        //    {
+        //        Connection.conn.Close();
+        //    }
+        //}
     }
 }

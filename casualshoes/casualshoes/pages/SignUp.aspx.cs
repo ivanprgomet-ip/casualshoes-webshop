@@ -19,10 +19,25 @@ namespace casualshoes
        
         protected void btn_submitNew_Click(object sender, EventArgs e)
         {
-            //creating new user/customer
-            Customer NewCustomer = new Customer(firstname.Text, lastname.Text, adress.Text, city.Text, zip.Text, password.Value, emailUsername.Text);
-            //registering the new user and printing message in label
-            lbl_msg.Text = Connection.RegisterNewCustomer(NewCustomer);
+            if (Page.IsValid == true)
+            {
+                //creating new user/customer
+                Customer NewCustomer = new Customer(firstname.Text, lastname.Text, adress.Text, city.Text, zip.Text, password.Value, emailUsername.Text);
+                //registering the new user and printing message in label
+                lbl_msg.ForeColor = System.Drawing.Color.Green;
+                lbl_msg.Text = Connection.RegisterNewCustomer(NewCustomer);
+            }
+            else //customer does not get added to database if all validation doesnt succeed
+            {
+                lbl_msg.ForeColor = System.Drawing.Color.Red;
+                lbl_msg.Text = "Du har inte fyllt i formuläret fullständigt. Se över dina uppgifter...";
+            }
+
+
+
+
+
+
 
 
             //string connectionString = "Data Source=.;Initial Catalog=CasualShoesDB;Integrated Security=True;";
