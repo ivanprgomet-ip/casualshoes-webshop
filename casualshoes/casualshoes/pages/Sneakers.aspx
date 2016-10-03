@@ -2,6 +2,10 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
     <h2>Sneakers</h2>
+    <asp:Button ID="SortByBrand" runat="server" OnClick="SortByBrand_Click" Text="Sortera efter märke" BackColor="#F5F0E9" BorderStyle="None" Font-Bold="True" Font-Size="Small" class="sort"/>
+        <asp:Button ID="SortByPrice" runat="server" OnClick="SortByPrice_Click" Text="Sortera efter pris" BackColor="#F5F0E9" BorderStyle="None" Font-Bold="True" Font-Size="Small" class="sort" />
+        <asp:Button ID="SortByName" runat="server" OnClick="SortByName_Click" Text="Sortera efter namn" BackColor="#F5F0E9" BorderStyle="None" Font-Bold="True" Font-Size="Small" class="sort" />
+        
 
     <article class="product-catalog-wrapper">
 

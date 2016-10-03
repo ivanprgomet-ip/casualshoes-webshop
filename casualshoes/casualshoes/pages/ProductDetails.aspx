@@ -27,9 +27,11 @@
                 </section>
                 <section id="product-details-specs-section">
                     <div>
-                        <figure>
-                            <img src="somebrand.jpg" />
-                        </figure>
+                        <asp:DataList ID="BrandImg" runat="server" DataSourceID="SqlDataSource2">
+                            <ItemTemplate>
+                                <img src='<%#Eval("ImgUrl") %>b.png' class="product-brand-img" />
+                            </ItemTemplate>
+                        </asp:DataList>
                     </div>
                     <div>
                         <span id="product-price">
@@ -72,6 +74,12 @@
     </section>
 
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CasualShoesDBConnectionString %>" SelectCommand="SELECT DISTINCT * FROM [Product] WHERE ([ProductId] = @Product)">
+        <SelectParameters>
+            <asp:QueryStringParameter Name="Product" QueryStringField="ProductId" DbType="Int32" />
+        </SelectParameters>
+    </asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:CasualShoesDBConnectionString %>" SelectCommand="SELECT Product.ProductBrandId, Brand.imgUrl
+FROM Product INNER JOIN Brand ON Product.ProductBrandId = Brand.BrandId WHERE ProductId= @Product">
         <SelectParameters>
             <asp:QueryStringParameter Name="Product" QueryStringField="ProductId" DbType="Int32" />
         </SelectParameters>

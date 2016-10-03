@@ -102,8 +102,8 @@
     <Content Include="images\brands\haflinger\b.png" />
     <Content Include="images\brands\johnstonmurphy\b.png" />
     <Content Include="images\brands\josefsejbel\b.png" />
+    <Content Include="images\jpeg\banner-main.jpg" />
     <Content Include="images\jpeg\brands.jpg" />
-    <Content Include="images\jpeg\mainbanner.jpg" />
     <Content Include="images\products\boot.png" />
     <Content Include="images\png\casualshoes.png" />
     <Content Include="images\png\facebook.png" />
