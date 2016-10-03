@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
     <h2 class="h2-center">Din Kundvarukorg</h2>
     <p>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" DataKeyNames="ProductId" OnRowDataBound="GridView1_RowDataBound" ShowFooter="True">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" DataKeyNames="ProductId,ModelSize" OnRowDataBound="GridView1_RowDataBound" ShowFooter="True">
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" />
                 <%--<asp:BoundField DataField="ProductId" HeaderText="ProductId" SortExpression="ProductId" InsertVisible="False" ReadOnly="True" />--%>
@@ -29,9 +29,10 @@
 					OrderDetail ON OrderHead.OrderId = OrderDetail.OrderId INNER JOIN
 					Product ON OrderDetail.ProductId = Product.ProductId ON Brand.BrandId = Product.ProductBrandId ON Category.CategoryId = Product.ProductCategoryId
 					WHERE Customer.CustomerId = @CustomerId"
-            DeleteCommand="DELETE FROM OrderDetail WHERE ProductId=@ProductId">
+            DeleteCommand="DELETE FROM OrderDetail WHERE ProductId=@ProductId AND ModelSize=@ModelSize">
             <DeleteParameters>
                 <asp:Parameter Name="ProductId" />
+                  <asp:Parameter Name="ModelSize" />
             </DeleteParameters>
             <SelectParameters>
                 <asp:SessionParameter Name="CustomerId" SessionField="customerId" />
