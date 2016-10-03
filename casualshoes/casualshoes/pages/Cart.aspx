@@ -40,10 +40,7 @@
     <table>
         <tr>
             <td>
-                <asp:HyperLink ID="hplnk_BackToShop" runat="server" NavigateUrl="~/pages/Home.aspx">Tillbaka till Webshopen</asp:HyperLink>
-            </td>
-            <td>
-                <asp:HyperLink ID="hplnk_ConfirmBuy" runat="server" NavigateUrl="~/pages/ConfirmedBuy.aspx">Bekräfta Köp</asp:HyperLink>
+                <asp:HyperLink ID="hplnk_BackToShop" runat="server" NavigateUrl='~/pages/Home.aspx'>Tillbaka till Webshopen</asp:HyperLink>
             </td>
         </tr>
     </table>
