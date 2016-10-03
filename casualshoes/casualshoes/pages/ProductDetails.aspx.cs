@@ -42,9 +42,10 @@ namespace casualshoes
                     int quantity = Convert.ToInt32(num_quantity.Value);
                     int modelsize = Convert.ToInt32(ddl_modelsize.SelectedValue);
                     OrderDetail newOrderDetail = new OrderDetail(orderid, productid, quantity, modelsize);
-                    OrderDetailDAL.AddNewOrderDetail(newOrderDetail);
 
-                    Response.Redirect("~/pages/Cart.aspx");
+                    lbl_addToCartMsg.Text = OrderDetailDAL.AddNewOrderDetail(newOrderDetail);//returning if add succedded
+
+                    //Response.Redirect("~/pages/Cart.aspx");
                 }
                 else
                 {
@@ -56,9 +57,10 @@ namespace casualshoes
                     int quantity = Convert.ToInt32(num_quantity.Value);
                     int modelsize = Convert.ToInt32(ddl_modelsize.SelectedValue);
                     OrderDetail newOrderDetail = new OrderDetail(orderid, productid, quantity, modelsize);
-                    OrderDetailDAL.AddNewOrderDetail(newOrderDetail);
 
-                    Response.Redirect("~/pages/Cart.aspx");
+                    lbl_addToCartMsg.Text = OrderDetailDAL.AddNewOrderDetail(newOrderDetail);//returning if add succedded
+
+                    //Response.Redirect("~/pages/Cart.aspx");
                 }
             }
         }

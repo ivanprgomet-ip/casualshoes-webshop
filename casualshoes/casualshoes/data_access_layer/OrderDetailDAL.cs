@@ -10,7 +10,7 @@ namespace casualshoes.data_access_layer
     public class OrderDetailDAL
     {
 
-        internal static void AddNewOrderDetail(OrderDetail newOrderDetail)
+        internal static string AddNewOrderDetail(OrderDetail newOrderDetail)
         {
             //adds new product into orderdetail table for specific orderid
             string insertOrderDetailQuery = $"INSERT INTO OrderDetail VALUES({newOrderDetail.orderid},{newOrderDetail.productid},{newOrderDetail.quantity},{newOrderDetail.modelsize})";
@@ -20,6 +20,11 @@ namespace casualshoes.data_access_layer
                 Connection.comm.CommandText = insertOrderDetailQuery;
                 Connection.conn.Open();
                 Connection.comm.ExecuteNonQuery();
+                return "Produkten har lagts till i kundkorgen!";
+            }
+            catch (Exception)
+            {
+                return "Produkten har INTE lagts till i kundkorgen!";
             }
             finally
             {
