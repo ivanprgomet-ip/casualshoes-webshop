@@ -38,12 +38,10 @@
             </SelectParameters>
         </asp:SqlDataSource>
     </p>
-    <table>
-        <tr>
-            <td>
-                <asp:HyperLink ID="hplnk_BackToShop" runat="server" NavigateUrl='~/pages/Home.aspx'>Tillbaka till Webshopen</asp:HyperLink>
-            </td>
-        </tr>
-    </table>
+    <section id="cart-options-section">
+        <asp:Button ID="Button1" runat="server" Text="Fortsätt Shoppa" />
+        <asp:Button ID="Button2" runat="server" Text="Bekräfta Köp" />
+    </section>
+
 </asp:Content>
 

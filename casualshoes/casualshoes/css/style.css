@@ -299,3 +299,15 @@ input#ContentPlaceHolder_txt_fullname {
     
 }
 
+
+/*CART.ASPX*/
+table#ContentPlaceHolder_GridView1 {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+#cart-options-section{
+
+    display:flex;
+    justify-content:space-around;
+}
