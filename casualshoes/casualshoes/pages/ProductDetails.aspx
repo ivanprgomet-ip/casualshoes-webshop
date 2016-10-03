@@ -35,7 +35,7 @@
                     </div>
                     <div>
                         <span id="product-price">
-                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("ProductPrice") %>' />kr</span>
+                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("RoundedPrice") %>' /></span>
                     </div>
                     <div>
                         <asp:Button ID="btn_addToCart" runat="server" Text="Lägg i kundkorg" OnCommand="btn_addToCart_Command" CommandName="AddingToCustomerCart" CommandArgument='<%#Eval("ProductId") + ","+Eval("ProductName") %>' />
@@ -70,7 +70,7 @@
             <input type="number" id="num_quantity" min="1" max="10" value="1" runat="server" />
         </div>
     </section>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CasualShoesDBConnectionString %>" SelectCommand="SELECT DISTINCT * FROM [Product] WHERE ([ProductId] = @Product)">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CasualShoesDBConnectionString %>" SelectCommand="SELECT [ProductId], [ProductDescription], [ImgUrl], [ProductPrice], FORMAT(ProductPrice, 'C', 'sv-SE') AS RoundedPrice, [ProductName] FROM [Product] WHERE ([ProductId] = @Product)">
         <SelectParameters>
             <asp:QueryStringParameter Name="Product" QueryStringField="ProductId" DbType="Int32" />
         </SelectParameters>

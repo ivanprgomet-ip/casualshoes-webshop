@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace casualshoes.pages
+namespace casualshoes
 {
 	public partial class SearchResult : System.Web.UI.Page
 	{
@@ -13,5 +13,6 @@ namespace casualshoes.pages
 		{
 
 		}
-	}
+       
+    }
 }
