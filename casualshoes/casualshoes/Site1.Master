@@ -26,7 +26,7 @@
                         </div>
                         <figure>
                             <img src="../images/png/service.png" />
-                            <figcaption class="icon-text"><a href="mailto:casualshoescustomerservice.com">Kontakta Kundservice</a></figcaption>
+                            <figcaption class="icon-text"><a href="Contact.aspx">Kontakta Kundservice</a></figcaption>
                         </figure>
                         <figure>
                             <img src="../images/png/user.png" />
