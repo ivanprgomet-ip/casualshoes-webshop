@@ -15,17 +15,17 @@ namespace casualshoes
         }
         protected void SortByName_Click(object sender, EventArgs e)
         {
-            SqlDataSource1.SelectCommand = "SELECT [ProductId], [ImgUrl], [ProductPrice], [ProductName] FROM [Product] WHERE ([ProductCategoryId] = @ProductCategoryId) ORDER by ProductName";
+            SqlDataSource1.SelectCommand = "SELECT [ProductId], [ImgUrl], [ProductPrice], FORMAT(ProductPrice, 'C', 'sv-SE') AS RoundedPrice, [ProductName] FROM [Product] WHERE ([ProductCategoryId] = @ProductCategoryId) ORDER by ProductName";
         }
 
         protected void SortByPrice_Click(object sender, EventArgs e)
         {
-            SqlDataSource1.SelectCommand = "SELECT [ProductId], [ImgUrl], [ProductPrice], [ProductName] FROM [Product] WHERE ([ProductCategoryId] = @ProductCategoryId) ORDER by ProductPrice";
+            SqlDataSource1.SelectCommand = "SELECT [ProductId], [ImgUrl], [ProductPrice], FORMAT(ProductPrice, 'C', 'sv-SE') AS RoundedPrice, [ProductName] FROM [Product] WHERE ([ProductCategoryId] = @ProductCategoryId) ORDER by ProductPrice";
         }
 
         protected void SortByBrand_Click(object sender, EventArgs e)
         {
-            SqlDataSource1.SelectCommand = "SELECT [ProductId], [ImgUrl], [ProductPrice], [ProductName] FROM [Product] WHERE ([ProductCategoryId] = @ProductCategoryId) ORDER by ProductBrandId";
+            SqlDataSource1.SelectCommand = "SELECT [ProductId], [ImgUrl], [ProductPrice], FORMAT(ProductPrice, 'C', 'sv-SE') AS RoundedPrice, [ProductName] FROM [Product] WHERE ([ProductCategoryId] = @ProductCategoryId) ORDER by ProductBrandId";
         }
     }
 }
