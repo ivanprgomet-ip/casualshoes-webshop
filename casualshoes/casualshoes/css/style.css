@@ -194,6 +194,10 @@ footer{
 img.switch:hover{
     border:2px solid rgba(122, 84, 38, 0.40);
 }
+img.switch:active{
+    border:2px solid rgba(122, 84, 38, 0.80);
+}
+
 .slides {
     display:none
 
@@ -275,6 +279,14 @@ input#ContentPlaceHolder_txt_fullname {
      margin-right:35px;
      
      margin-bottom:35px;
+
+}
+.product-list-container a{
+    color:black;
+    text-decoration:none;
+}
+.product-list-container:hover a{
+    color:sandybrown;
 }
 .product-list-container img{
      width:180px;
