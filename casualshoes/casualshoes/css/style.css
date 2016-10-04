@@ -377,12 +377,12 @@ color:#44433b;
 }
 /*CONFIRMEDBUY.ASPX*/
 #purchase-completed-section{
-    background-color:white;
-    padding-top:150px;
-    padding-bottom:250px;
-    display:flex;
-    flex-direction:column;
-    text-align:center;
+    background-color: #f5f0e9;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 #purchase-completed-section p:nth-child(1) {
     font-size:24px;
