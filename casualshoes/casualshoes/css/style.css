@@ -277,25 +277,41 @@ section#product-details-specs-section {
 }
 
 .QuantitySize{
+
+    width: 200px;
     position:absolute;
-    margin-left: 665px;
-    padding-top: 500px
+    margin-left: 699px;
+    padding-top: 191px;
+    
 }
 .SizeDDL{
+    position:absolute;
     width: 100px;
-    height: 35px;
+    height: 26px;
     border: solid rgba(231, 223, 211, 0.65) 3px;
     background-color: #f5f0e9;
     font-size:large;
+    margin-top: 16px;
 }
 .QuantityInput{
-    
+    position:absolute;
     width: 95px;
-    height: 35px;
+    height: 18px;
     border: solid rgba(231, 223, 211, 0.65) 3px;
     background-color: #f5f0e9;
     font-size:large;
+    margin-left: 110px;
+    margin-top: 16px;
 }
+
+.QuantityLabel{
+    position: absolute;
+    margin-left: 110px;
+}
+.SizeLabel{
+    position:absolute;
+}
+
 
 
 /*CONTACT.ASPX*/
