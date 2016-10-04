@@ -2,6 +2,31 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
     <%-- Display the item information that was clicked on right before user arrives here--%>
+    <div class="QuantitySize">
+        <div>
+            <asp:Label ID="lbl_addToCartMsg" runat="server" Text=""></asp:Label>
+        </div>
+        <div>
+            <asp:Label ID="Label4" runat="server" Text="Storlek:"></asp:Label>
+            </div>
+        <div>
+            <asp:DropDownList ID="ddl_modelsize" runat="server" CssClass="SizeDDL">
+                <asp:ListItem Value="36">36</asp:ListItem>
+                <asp:ListItem Value="37">37</asp:ListItem>
+                <asp:ListItem Value="38">38</asp:ListItem>
+                <asp:ListItem Value="39">39</asp:ListItem>
+                <asp:ListItem Value="40">40</asp:ListItem>
+                <asp:ListItem Value="41">41</asp:ListItem>
+                <asp:ListItem Value="42">42</asp:ListItem>
+            </asp:DropDownList>
+        </div>
+        <div>
+            <asp:Label ID="Label1" runat="server" Text="Antal:"></asp:Label>
+            </div>
+        <div>
+            <input type="number" id="num_quantity" min="1" max="10" value="1" runat="server" class="QuantityInput" />
+        </div>
+    </div>
     <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1">
         <ItemTemplate>
             <h2>
@@ -50,26 +75,7 @@
             <br />
         </ItemTemplate>
     </asp:DataList>
-    <section>
-        <div>
-            <asp:Label ID="lbl_addToCartMsg" runat="server" Text=""></asp:Label>
-        </div>
-        <div>
-            <asp:DropDownList ID="ddl_modelsize" runat="server">
-                <asp:ListItem Value="36">36</asp:ListItem>
-                <asp:ListItem Value="37">37</asp:ListItem>
-                <asp:ListItem Value="38">38</asp:ListItem>
-                <asp:ListItem Value="39">39</asp:ListItem>
-                <asp:ListItem Value="40">40</asp:ListItem>
-                <asp:ListItem Value="41">41</asp:ListItem>
-                <asp:ListItem Value="42">42</asp:ListItem>
-            </asp:DropDownList>
-        </div>
-        <div>
-            <asp:Label ID="Label1" runat="server" Text="Antal:"></asp:Label>
-            <input type="number" id="num_quantity" min="1" max="10" value="1" runat="server" />
-        </div>
-    </section>
+    
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CasualShoesDBConnectionString %>" SelectCommand="SELECT [ProductId], [ProductDescription], [ImgUrl], [ProductPrice], FORMAT(ProductPrice, 'C', 'sv-SE') AS RoundedPrice, [ProductName] FROM [Product] WHERE ([ProductId] = @Product)">
         <SelectParameters>
             <asp:QueryStringParameter Name="Product" QueryStringField="ProductId" DbType="Int32" />

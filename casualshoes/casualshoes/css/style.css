@@ -276,6 +276,26 @@ section#product-details-specs-section {
     margin-top:10px;
 }
 
+.QuantitySize{
+    position:absolute;
+    margin-left: 665px;
+    padding-top: 500px
+}
+.SizeDDL{
+    width: 100px;
+    height: 35px;
+    border: solid rgba(231, 223, 211, 0.65) 3px;
+    background-color: #f5f0e9;
+    font-size:large;
+}
+.QuantityInput{
+    
+    width: 95px;
+    height: 35px;
+    border: solid rgba(231, 223, 211, 0.65) 3px;
+    background-color: #f5f0e9;
+    font-size:large;
+}
 
 
 /*CONTACT.ASPX*/
@@ -380,6 +400,8 @@ color:#44433b;
     border: 1px solid #504332;
     margin-bottom: 5px;
 }
+
+
 /*CONFIRMEDBUY.ASPX*/
 #purchase-completed-section{
     background-color: #f5f0e9;
