@@ -6,16 +6,14 @@
     <div class="MapContainer">
         <iframe class="Map" width="940" height="400" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDz_5e3py8snK6ShWiotwAO5D7p7ehbZNU&center=55.5643772,12.9728244&zoom=16"></iframe>
     </div>
+
     <div>
         <article>
+            <h2>CasualShoes</h2>
+
             <p>
-                Vårt huvudkontor finns på tredje våningen på Emporia köpcentrum i Hyllie, där vi även har vår största butik.
+                Vårt huvudkontor finns på tredje våningen på <strong>Emporia köpcentrum i Hyllie</strong>, där vi även har vår största butik.
             </p>
-        </article>
-    </div>
-    <div>
-        <article>
-            <h3>CasualShoes</h3>
             <p>
                 CasualShoes bildades som en frifackkedja 1989. CasualShoes har expanderat kraftigt de senaste åren och idag finns ca 80 butiker. CasualShoes vänder sig till mode- och kvalitetsmedvetna skoälskare. För att ge de bästa kunderna extra förmåner har CasualShoes en kundklubb som heter Solemate. Sedan 2016 finns CasualShoes även som e-handel.
             </p>
