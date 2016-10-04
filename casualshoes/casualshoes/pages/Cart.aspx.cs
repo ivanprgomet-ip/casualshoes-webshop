@@ -42,5 +42,16 @@ namespace casualshoes
                 e.Row.Cells[7].Font.Bold = true;
             }
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            //redirect to message/reciept page
+            Response.Redirect("~/pages/ConfirmedBuy.aspx");
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/pages/Home.aspx");
+        }
     }
 }
