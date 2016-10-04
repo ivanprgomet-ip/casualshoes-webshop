@@ -52,12 +52,17 @@ namespace casualshoes
             client.EnableSsl = true;
             client.Host = "smtp.gmail.com";
             client.Port = 587;
-            client.Credentials = new NetworkCredential("casual.shoes.project.noreply@gmail.com", "passwordplace");
+            client.Credentials = new NetworkCredential("casual.shoes.project.noreply@gmail.com", "password place");
             client.EnableSsl = true;
             //client.Host = "localhost";
             client.Send(msg);
 
-            stateEmail.Text = "Message sent";
+            if (Page.IsValid == true)
+            {
+                 stateEmail.Text = "Message sent";
+            }
+           
+               
         }
       
 
