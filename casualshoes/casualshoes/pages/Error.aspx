@@ -2,5 +2,5 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
 
      <h1>Error</h1>
-    Oppps... error. Return to home page.
+    Oppps... error. Please return to <a href="Home.aspx"> Home page </a>
 </asp:Content>
