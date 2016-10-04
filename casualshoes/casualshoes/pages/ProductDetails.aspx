@@ -2,13 +2,13 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
     <%-- Display the item information that was clicked on right before user arrives here--%>
+    <div class="AddedToCart">
+        <asp:Label ID="lbl_addToCartMsg" runat="server" Font-Bold="True"></asp:Label>
+    </div>
     <div class="QuantitySize">
         <div>
-            <asp:Label ID="lbl_addToCartMsg" runat="server" Text=""></asp:Label>
-        </div>
-        <div>
             <asp:Label ID="Label4" runat="server" Text="Storlek:" CssClass="SizeLabel"></asp:Label>
-            </div>
+        </div>
         <div>
             <asp:DropDownList ID="ddl_modelsize" runat="server" CssClass="SizeDDL">
                 <asp:ListItem Value="36">36</asp:ListItem>
@@ -22,7 +22,7 @@
         </div>
         <div>
             <asp:Label ID="Label1" runat="server" Text="Antal:" CssClass="QuantityLabel"></asp:Label>
-            </div>
+        </div>
         <div>
             <input type="number" id="num_quantity" min="1" max="10" value="1" runat="server" class="QuantityInput" />
         </div>
@@ -75,7 +75,7 @@
             <br />
         </ItemTemplate>
     </asp:DataList>
-    
+
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CasualShoesDBConnectionString %>" SelectCommand="SELECT [ProductId], [ProductDescription], [ImgUrl], [ProductPrice], FORMAT(ProductPrice, 'C', 'sv-SE') AS RoundedPrice, [ProductName] FROM [Product] WHERE ([ProductId] = @Product)">
         <SelectParameters>
             <asp:QueryStringParameter Name="Product" QueryStringField="ProductId" DbType="Int32" />
