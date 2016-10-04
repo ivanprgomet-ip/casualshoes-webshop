@@ -35,13 +35,13 @@ namespace casualshoes.data_access_layer
         public static void ClearOrderDetails(int orderid)
         {
             //TODO: WHY IS THIS NOT WORKING CORRECTLY?
-            string sqlQuery = string.Format($"DELETE FROM OrderDetail WHERE OrderId='{orderid}'");
+            string sqlQuery = string.Format($"DELETE FROM OrderDetail WHERE OrderId IN '{orderid}'");
             Connection.comm.CommandText = sqlQuery;
 
             try
             {
                 Connection.conn.Open();
-                SqlDataReader reader = Connection.comm.ExecuteReader();
+                //SqlDataReader reader = Connection.comm.ExecuteReader();
                 Connection.comm.ExecuteNonQuery();
             }
             finally

@@ -370,9 +370,23 @@ color:#44433b;
     margin:15px;
    
 }
-.txt-area{
-    background-color:transparent;
-    border:1px solid #504332;
-   
-    margin-bottom:5px;
+.txt-area {
+    background-color: transparent;
+    border: 1px solid #504332;
+    margin-bottom: 5px;
+}
+/*CONFIRMEDBUY.ASPX*/
+#purchase-completed-section{
+    background-color:white;
+    padding-top:150px;
+    padding-bottom:250px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+#purchase-completed-section p:nth-child(1) {
+    font-size:24px;
+}
+#purchase-completed-section p:nth-child(3){
+    font-weight:bold;
 }

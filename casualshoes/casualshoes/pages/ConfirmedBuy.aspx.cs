@@ -5,13 +5,15 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using casualshoes.data_access_layer;
+
 namespace casualshoes
 {
     public partial class WebForm13 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string confirmationMsg = string.Format($"Thank you for ordering at CasualShoes.com! Please make sure the information below is correct: firstname: {Session["customername"]} lastname: {Session["customerlastname"]}{Session["customerId"] }{Session["customeradress"] }{Session["customercity"] }{Session["customerzip"] }");
+            string confirmationMsg = string.Format($"Firstname: {Session["customername"]}<br /> Lastname: {Session["customerlastname"]}<br />Customer ID: {Session["customerId"] }<br /> Adress: {Session["customeradress"] }<br /> City: {Session["customercity"] }<br /> Zip: {Session["customerzip"] }");
 
             lbl_confirmedBuyMsg.Text = confirmationMsg;
         }
