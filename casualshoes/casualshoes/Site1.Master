@@ -19,7 +19,7 @@
                     <div id="header-top-nav">
                         
                         <div>
-                            <asp:TextBox ID="SearchBoxID" placeholder="Search CasualShoes.com" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="SearchBoxID" placeholder="Ange sökord..." runat="server"></asp:TextBox>
                             <asp:Button ID="Search" runat="server" OnClick="Search_Click" Text="Sök" />
                         </div>
                         <figure>

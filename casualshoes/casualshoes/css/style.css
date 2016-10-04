@@ -105,15 +105,23 @@ header{
     font: 18px;
     color: #504332;
 }
-#Search{
-    color:#ffffff;
-    background:#c07a0e;
-    height:20px;
+#Search {
+    color: #ffffff;
+    background: #c07a0e;
     border-color: transparent;
     border-style: solid;
     font-size: 13px;
+    padding: 5px;
+    width: 75px;
 }
-
+input#SearchBoxID {
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgb(212, 205, 197);
+    /*height: 18px;*/
+    padding: 5px;
+    /*height:20px;*/
+}
 /*FOOTER*/
 footer{
     background-color: #45433b;
@@ -346,11 +354,7 @@ input#ContentPlaceHolder_DataList1_btn_addToCart_0{
     
 }
 
-input#SearchBoxID{
-    background-color:transparent;
-    border:1px solid #504332;
-    height:18px
-}
+
 a:link{
 color:#44433b;
 }
