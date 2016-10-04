@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using casualshoes.data_access_layer;
+
 namespace casualshoes
 {
     public partial class WebForm13 : System.Web.UI.Page
