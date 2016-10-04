@@ -31,6 +31,15 @@ namespace casualshoes {
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
         
         /// <summary>
+        /// rev_emailValidatior control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator rev_emailValidatior;
+        
+        /// <summary>
         /// txtSubject control.
         /// </summary>
         /// <remarks>
