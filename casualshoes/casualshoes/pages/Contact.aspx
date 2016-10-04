@@ -70,26 +70,28 @@
 
     <asp:Panel runat="server">
         <asp:Label runat="server">Name:</asp:Label>
-        <asp:TextBox runat="server" ID="txtName"></asp:TextBox>
+        <asp:TextBox runat="server" ID="txtName" class="form"></asp:TextBox>
 
         <br />
 
         <asp:Label runat="server">Email</asp:Label>
-        <asp:TextBox runat="server" ID="txtEmail"></asp:TextBox>
+        <asp:TextBox runat="server" ID="txtEmail"  class="form"></asp:TextBox>
         <br />
 
         <asp:Label runat="server">Subject</asp:Label>
-        <asp:TextBox runat="server" ID="txtSubject" ></asp:TextBox>
+        <asp:TextBox runat="server" ID="txtSubject"  class="form" ></asp:TextBox>
         <br />
 
       
 
         <asp:Label runat="server" >Message</asp:Label>
-        <textarea runat="server" id="txtMessage" rows="7" columns="20"></textarea>
+        <textarea runat="server" id="txtMessage" rows="7" columns="20"  class="form"></textarea>
         <br />
 
-        <asp:Button runat="server" ID="btnSend" Text="Send"  onClick="btnSend_Click1" />
-         <asp:Button runat="server" ID="btnReset" Text="Reset" onClick="btnReset_Click1" />
+        <asp:Button runat="server" ID="btnReset" Text="Reset" onClick="btnReset_Click1" />
+
+        <asp:Button runat="server" ID="btnSend" Text="Send"  onClick="btnSend_Click1"  class="form-send" />
+        
 
         <br />
 

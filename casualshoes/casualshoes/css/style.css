@@ -343,3 +343,18 @@ input#SearchBoxID{
 a:link{
 color:#44433b;
 }
+.form{
+  background-color:transparent;
+    border:1px solid #504332;
+    height:18px;
+    margin:5px;
+}
+.form-send{
+    color:#ffffff;
+    background:#c07a0e;
+    height:20px;
+    border-color: transparent;
+    border-style: solid;
+    font-size: 13px;
+   
+}
