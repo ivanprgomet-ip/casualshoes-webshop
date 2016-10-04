@@ -360,6 +360,9 @@ input#ContentPlaceHolder_txt_fullname {
      
      margin-bottom:35px;
 
+         border: 1px solid rgba(122, 84, 38, 0.2);
+    box-sizing: border-box;
+
 }
 .product-list-container a{
     color:black;
@@ -369,8 +372,9 @@ input#ContentPlaceHolder_txt_fullname {
     color:sandybrown;
 }
 .product-list-container img{
-     width:180px;
+     width: 165px;
      height:auto;
+     box-sizing:border-box;
 }
 
 .sort{
