@@ -134,6 +134,9 @@ footer{
     display:flex;
     justify-content:space-around;
 }
+#footer-top-section a:hover{
+    color:gray;
+}
 #footer-left-nav ul{
     display:flex;
 }
@@ -159,8 +162,17 @@ footer{
     font-size: 13px;
     display:flex;
     justify-content:center;
-
     padding:15px 0;
+}
+#footer-bottom-info a:link{
+    text-decoration: none;
+    color: #adacaa;
+}
+#footer-bottom-info a:link:hover{
+    text-decoration: underline;
+}
+#footer-bottom-info a:visited{
+    color: #adacaa;
 }
 
 
