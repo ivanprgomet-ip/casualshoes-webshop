@@ -23,14 +23,14 @@
                             <asp:Button ID="Search" runat="server" OnClick="Search_Click" Text="Sök" />
                         </div>
                         <figure>
-                            <img src="../images/png/service.png" />
+                            <img src="../images/png/service.png" / >
                             <figcaption class="icon-text"><a href="Contact.aspx">Kontakta Kundservice</a></figcaption>
                         </figure>
                         <figure>
                             <img src="../images/png/user.png" />
                             <asp:Label ID="lbl_login" runat="server" Text="Label"></asp:Label>
-                            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">LinkButton</asp:LinkButton>
-                        </figure>
+                            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"  class="icon-text">LinkButton</asp:LinkButton>
+                        </figure> 
                     </div>
                     <div id="header-bottom-nav">
                         <ul>

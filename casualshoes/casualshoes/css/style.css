@@ -95,12 +95,12 @@ header{
     color: #504332;
 }
 #Search{
-    color:#484644;
-    background:none;
-    border: thin;
-    border-color: #504332;
+    color:#ffffff;
+    background:#c07a0e;
+    height:20px;
+    border-color: transparent;
     border-style: solid;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 /*FOOTER*/
@@ -245,7 +245,9 @@ input#ContentPlaceHolder_DataList1_btn_addToCart_0{
         padding: 7px 10% 7px 8px;
         border:none;
         cursor:pointer; 
-        background-color:#593b0d;
+        background-color:#685235;
+       
+
 }
 section#product-details-specs-section {
     margin-left: 45px;
@@ -322,4 +324,19 @@ h1, h2 {
     font-family: 'Open Sans Condensed', sans-serif;
     color: #593b0d;
     font-size: 35px;
+}
+
+.icon-text{
+    padding-bottom:5px;
+}
+
+input#ContentPlaceHolder_DataList1_btn_addToCart_0{
+    background-color:#c07a0e;
+    
+}
+
+input#SearchBoxID{
+    background-color:transparent;
+    border:1px solid #504332;
+    height:18px
 }
