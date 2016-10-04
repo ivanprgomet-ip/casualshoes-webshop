@@ -28,7 +28,11 @@
         </asp:ListView>
     </article>
 
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=.;Initial Catalog=CasualShoesDB;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [ProductId], [ImgUrl], [ProductPrice], FORMAT(ProductPrice, 'C', 'sv-SE') AS RoundedPrice, [ProductName] FROM [Product]  WHERE ([ProductName] like '%' + @Name + '%')">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=.;Initial Catalog=CasualShoesDB;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [ProductId], [ProductPrice], P.ImgUrl,
+FORMAT(ProductPrice, 'C', 'sv-SE') AS RoundedPrice, [ProductName], ProductBrandId, Brand.BrandName
+FROM Product P
+INNER JOIN Brand ON P.ProductBrandId = Brand.BrandId
+WHERE ([ProductName] like '%' + @Name + '%') OR ([BrandName] like '%' + @Name + '%')">
         <SelectParameters>
             <asp:QueryStringParameter Name="Name" QueryStringField="Term" DbType="string" />
         </SelectParameters>
