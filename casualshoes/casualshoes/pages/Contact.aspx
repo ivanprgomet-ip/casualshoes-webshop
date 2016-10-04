@@ -69,22 +69,26 @@
     <%-- Variant tree --%>
 
     <asp:Panel runat="server">
-        <asp:Label runat="server">Name:</asp:Label>
-        <asp:TextBox runat="server" ID="txtName" class="form"></asp:TextBox>
+       
+               <asp:Label runat="server">Name*:</asp:Label><br />
+           <asp:TextBox runat="server" ID="txtName" class="form"></asp:TextBox>
+          
+        
+        
 
-        <br />
+        <br /><br />
 
-        <asp:Label runat="server">Email</asp:Label>
+        <asp:Label runat="server">Email*:</asp:Label><br />
         <asp:TextBox runat="server" ID="txtEmail"  class="form"></asp:TextBox>
-        <br />
+        <br /><br />
 
-        <asp:Label runat="server">Subject</asp:Label>
+        <asp:Label runat="server">Subject*:</asp:Label><br />
         <asp:TextBox runat="server" ID="txtSubject"  class="form" ></asp:TextBox>
-        <br />
+        <br /><br />
 
       
 
-        <asp:Label runat="server" >Message</asp:Label>
+        <asp:Label runat="server" >Message*:</asp:Label><br />
         <textarea runat="server" id="txtMessage" rows="7" columns="20"  class="form"></textarea>
         <br />
 
