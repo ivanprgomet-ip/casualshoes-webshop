@@ -65,6 +65,7 @@ header{
     }
     #header-bottom-nav ul a{
         font-weight:bold;
+        font-size:14px;
     }
     #header-bottom-nav ul li{
         padding:0 12px 0 12px;

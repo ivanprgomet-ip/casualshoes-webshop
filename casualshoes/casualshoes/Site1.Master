@@ -28,17 +28,17 @@
                         </figure>
                         <figure>
                             <img src="../images/png/user.png" />
-                            <asp:Label ID="lbl_login" runat="server" Text="Label"></asp:Label>
+                            <asp:Label ID="lbl_login" runat="server" Text="Label"   class="icon-text"></asp:Label>
                             <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"  class="icon-text">LinkButton</asp:LinkButton>
                         </figure> 
                     </div>
                     <div id="header-bottom-nav">
                         <ul>
-                            <li><a href="Home.aspx">HEM</a></li>
-                            <li><a href="Sneakers.aspx">SNEAKERS</a></li>
-                            <li><a href="Sandals.aspx">SANDALER</a></li>
-                            <li><a href="Boots.aspx">KÄNGOR & BOOTS</a></li>
-                            <li><a href="LowShoes.aspx">LÅGSKOR</a></li>
+                            <li><a href="Home.aspx"  class="icon-text">HEM</a></li>
+                            <li><a href="Sneakers.aspx"  class="icon-text">SNEAKERS</a></li>
+                            <li><a href="Sandals.aspx"  class="icon-text">SANDALER</a></li>
+                            <li><a href="Boots.aspx"  class="icon-text">KÄNGOR & BOOTS</a></li>
+                            <li><a href="LowShoes.aspx"  class="icon-text">LÅGSKOR</a></li>
                         </ul>
                         <figure>
                             <img src="../images/png/shoppingcrart.png" />
