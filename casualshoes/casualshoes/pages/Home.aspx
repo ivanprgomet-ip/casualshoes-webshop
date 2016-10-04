@@ -6,7 +6,7 @@
             <img src="../images/jpeg/banner-main.jpg" alt="main banner" /></a>
     </article>
     <article id="PopularProductsId">
-        <h1 class="header-banner">Mest Populära</h1>
+        <h1 class="header-banner">Våra Rekomendationer</h1>
         <%-- <div id="popularProductsContainerId">
 
             <a href="ProductDetails.aspx">

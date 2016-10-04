@@ -21,7 +21,7 @@
         </asp:GridView>
     </p>
     <p>
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:CasualShoesDBConnectionString %>" SelectCommand="SELECT Product.ProductId, Brand.BrandName, Product.ProductName, Product.ProductPrice, Product.ProductDescription, Category.CategoryName, OrderDetail.Quantity, OrderDetail.ModelSize, OrderHead.OrderId, OrderHead.CustomerId, (Product.ProductPrice*Quantity) as total
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:CasualShoesDBConnectionString %>" SelectCommand="SELECT Product.ProductId, Brand.BrandName, Product.ProductName, FORMAT(ProductPrice, 'C', 'sv-SE') AS ProductPrice, Product.ProductDescription, Category.CategoryName, OrderDetail.Quantity, OrderDetail.ModelSize, OrderHead.OrderId, OrderHead.CustomerId, (Product.ProductPrice*Quantity) as total
 					FROM Category INNER JOIN
 					Brand INNER JOIN
 					OrderHead INNER JOIN
