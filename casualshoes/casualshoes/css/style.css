@@ -315,3 +315,19 @@ table#ContentPlaceHolder_GridView1 {
 .h2-center{
     text-align:center;
 }
+
+/*CONFIRMEDBUY.ASPX*/
+#purchase-completed-section{
+    background-color:white;
+    padding-top:150px;
+    padding-bottom:250px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+#purchase-completed-section p:nth-child(1) {
+    font-size:24px;
+}
+#purchase-completed-section p:nth-child(3){
+    font-weight:bold;
+}

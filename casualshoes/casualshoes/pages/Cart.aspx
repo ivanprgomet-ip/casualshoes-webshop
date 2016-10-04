@@ -39,6 +39,7 @@
             </SelectParameters>
         </asp:SqlDataSource>
     </p>
+    <%-- TODO:we dont like inline! --%>
     <div style="text-align:center">
         <asp:Label ID="lbl_cartMsg" runat="server" Text=" "></asp:Label>
     </div>

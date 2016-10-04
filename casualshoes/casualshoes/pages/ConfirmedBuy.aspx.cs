@@ -11,7 +11,7 @@ namespace casualshoes
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string confirmationMsg = string.Format($"Thank you for ordering at CasualShoes.com! Please make sure the information below is correct: firstname: {Session["customername"]} lastname: {Session["customerlastname"]}{Session["customerId"] }{Session["customeradress"] }{Session["customercity"] }{Session["customerzip"] }");
+            string confirmationMsg = string.Format($"Firstname: {Session["customername"]}<br /> Lastname: {Session["customerlastname"]}<br />Customer ID: {Session["customerId"] }<br /> Adress: {Session["customeradress"] }<br /> City: {Session["customercity"] }<br /> Zip: {Session["customerzip"] }");
 
             lbl_confirmedBuyMsg.Text = confirmationMsg;
         }
