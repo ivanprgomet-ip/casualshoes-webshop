@@ -10,7 +10,7 @@ namespace casualshoes.data_access_layer
     public class OrderDetailDAL
     {
 
-        internal static string AddNewOrderDetail(OrderDetail newOrderDetail)
+        public static string AddNewOrderDetail(OrderDetail newOrderDetail)
         {
             //adds new product into orderdetail table for specific orderid
             string insertOrderDetailQuery = $"INSERT INTO OrderDetail VALUES({newOrderDetail.orderid},{newOrderDetail.productid},{newOrderDetail.quantity},{newOrderDetail.modelsize})";
@@ -32,21 +32,22 @@ namespace casualshoes.data_access_layer
             }
           
         }
-        //internal static void ClearOrderDetails(int orderid)
-        //{
-        //    //TODO: FIX THIS SQLQUERY DELETE STATEMENT, ITS NOT CORRECT, check if the orderid value is getting through into the sqlquery
-        //    string sqlQuery = string.Format($"DELETE FROM OrderDetail WHERE OrderId='{orderid}'");
-        //    Connection.comm.CommandText = sqlQuery;
+        public static void ClearOrderDetails(int orderid)
+        {
+            //TODO: WHY IS THIS NOT WORKING CORRECTLY?
+            string sqlQuery = string.Format($"DELETE FROM OrderDetail WHERE OrderId='{orderid}'");
+            Connection.comm.CommandText = sqlQuery;
 
-        //    try
-        //    {
-        //        Connection.conn.Open();
-        //        Connection.comm.ExecuteNonQuery();
-        //    }
-        //    finally
-        //    {
-        //        Connection.conn.Close();
-        //    }
-        //}
+            try
+            {
+                Connection.conn.Open();
+                SqlDataReader reader = Connection.comm.ExecuteReader();
+                Connection.comm.ExecuteNonQuery();
+            }
+            finally
+            {
+                Connection.conn.Close();
+            }
+        }
     }
 }

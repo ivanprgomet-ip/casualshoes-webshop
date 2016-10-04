@@ -40,8 +40,8 @@
         </asp:SqlDataSource>
     </p>
     <section id="cart-options-section">
-        <asp:Button ID="Button1" runat="server" Text="Fortsätt Shoppa" />
-        <asp:Button ID="Button2" runat="server" Text="Bekräfta Köp" />
+        <asp:Button ID="Button1" runat="server" Text="Fortsätt Shoppa" OnClick="Button1_Click" />
+        <asp:Button ID="Button2" runat="server" Text="Bekräfta Köp" OnClick="Button2_Click" />
     </section>
 
 </asp:Content>
