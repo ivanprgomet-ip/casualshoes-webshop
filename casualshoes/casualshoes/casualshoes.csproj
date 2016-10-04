@@ -104,6 +104,7 @@
     <Content Include="images\brands\josefsejbel\b.png" />
     <Content Include="images\jpeg\banner-main.jpg" />
     <Content Include="images\jpeg\brands.jpg" />
+    <Content Include="images\png\404.png" />
     <Content Include="images\products\boot.png" />
     <Content Include="images\png\casualshoes.png" />
     <Content Include="images\png\facebook.png" />
