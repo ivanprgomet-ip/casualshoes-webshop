@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Kundvarukorg" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeFile="Cart.aspx.cs" Inherits="casualshoes.WebForm9" %>
+﻿<%@ Page Title="Kundvarukorg" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Cart.aspx.cs" Inherits="casualshoes.WebForm9" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
     <h2 class="h2-center">Din Kundvarukorg</h2>
@@ -39,6 +39,9 @@
             </SelectParameters>
         </asp:SqlDataSource>
     </p>
+    <div style="text-align:center">
+        <asp:Label ID="lbl_cartMsg" runat="server" Text=" "></asp:Label>
+    </div>
     <section id="cart-options-section">
         <asp:Button ID="Button1" runat="server" Text="Fortsätt Shoppa" OnClick="Button1_Click" />
         <asp:Button ID="Button2" runat="server" Text="Bekräfta Köp" OnClick="Button2_Click" />

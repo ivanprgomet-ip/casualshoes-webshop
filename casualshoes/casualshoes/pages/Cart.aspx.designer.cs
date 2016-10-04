@@ -31,21 +31,30 @@ namespace casualshoes {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
         
         /// <summary>
-        /// lbl_totalprice control.
+        /// lbl_cartMsg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_totalprice;
+        protected global::System.Web.UI.WebControls.Label lbl_cartMsg;
         
         /// <summary>
-        /// hplnk_BackToShop control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hplnk_BackToShop;
+        protected global::System.Web.UI.WebControls.Button Button1;
+        
+        /// <summary>
+        /// Button2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button2;
     }
 }

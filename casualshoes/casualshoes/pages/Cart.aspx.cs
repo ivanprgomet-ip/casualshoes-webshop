@@ -45,8 +45,11 @@ namespace casualshoes
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            //redirect to message/reciept page
-            Response.Redirect("~/pages/ConfirmedBuy.aspx");
+            //går ej betälla med tom varukorg
+            if (GridView1.Rows.Count > 0)
+                Response.Redirect("~/pages/ConfirmedBuy.aspx");
+            else
+                lbl_cartMsg.Text = "Det går ej att beställa med en tom varukorg!";
         }
 
         protected void Button1_Click(object sender, EventArgs e)
