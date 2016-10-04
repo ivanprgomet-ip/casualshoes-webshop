@@ -102,8 +102,8 @@
     <Content Include="images\brands\haflinger\b.png" />
     <Content Include="images\brands\johnstonmurphy\b.png" />
     <Content Include="images\brands\josefsejbel\b.png" />
+    <Content Include="images\jpeg\banner-main.jpg" />
     <Content Include="images\jpeg\brands.jpg" />
-    <Content Include="images\jpeg\mainbanner.jpg" />
     <Content Include="images\products\boot.png" />
     <Content Include="images\png\casualshoes.png" />
     <Content Include="images\png\facebook.png" />
@@ -163,9 +163,9 @@
     <Content Include="images\products\sandals\Adilette\1.jpg" />
     <Content Include="images\products\sandals\Adilette\2.jpg" />
     <Content Include="images\products\sandals\Adilette\3.jpg" />
-    <Content Include="images\products\sandals\Bali\1.jpg" />
     <Content Include="images\products\sandals\Bali\2.jpg" />
     <Content Include="images\products\sandals\Bali\3.jpg" />
+    <Content Include="images\products\sandals\Bali\1.jpg" />
     <Content Include="images\products\sandals\Elephant\1.jpg" />
     <Content Include="images\products\sandals\Elephant\2.jpg" />
     <Content Include="images\products\sandals\Elephant\3.jpg" />
@@ -226,6 +226,7 @@
     <Content Include="pages\Login.aspx" />
     <Content Include="pages\ProductDetails.aspx" />
     <Content Include="pages\SignUp.aspx" />
+    <Content Include="pages\ConfirmedBuy.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -243,8 +244,11 @@
   <ItemGroup>
     <Compile Include="data_access_layer\Admin.cs" />
     <Compile Include="data_access_layer\Connection.cs" />
+    <Compile Include="data_access_layer\OrderDetailDAL.cs" />
+    <Compile Include="data_access_layer\OrderHeadDAL.cs" />
     <Compile Include="data_access_layer\ProductDAL.cs" />
     <Compile Include="models\Customer.cs" />
+    <Compile Include="models\OrderDetail.cs" />
     <Compile Include="models\Product.cs" />
     <Compile Include="pages\SearchResult.aspx.cs">
       <DependentUpon>SearchResult.aspx</DependentUpon>
@@ -358,6 +362,13 @@
     </Compile>
     <Compile Include="pages\SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ConfirmedBuy.aspx.cs">
+      <DependentUpon>ConfirmedBuy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\ConfirmedBuy.aspx.designer.cs">
+      <DependentUpon>ConfirmedBuy.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

@@ -24,7 +24,6 @@ namespace casualshoes.data_access_layer
 
         public void InsertNewCustomer(Customer NewCustomer)
         {
-            //TODO: make this command a stored procedure instead
             string comm = $"INSERT INTO Customer(Firstname, Lastname, Adress, City, ZipCode, Password, EmailUsername) Values('{NewCustomer.Firstname}','{NewCustomer.Lastname}','{NewCustomer.Adress}','{NewCustomer.City}','{NewCustomer.ZipCode}','{NewCustomer.Password}','{NewCustomer.EmailUsername}')";
             using (SqlCommand sqlComm = new SqlCommand(comm, _sqlConn))
             {

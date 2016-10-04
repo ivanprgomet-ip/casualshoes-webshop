@@ -57,6 +57,7 @@
             </tr>
         </table>
         <asp:button id="btn_submitNew" runat="server" text="Signup" onclick="btn_submitNew_Click" />
+        <br />
         <asp:Label ID="lbl_msg" runat="server" Text=""></asp:Label>
     </fieldset>
 </asp:Content>

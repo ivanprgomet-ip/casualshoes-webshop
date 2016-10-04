@@ -14,7 +14,22 @@ namespace casualshoes
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+
+        }
+
+        protected void SortByName_Click(object sender, EventArgs e)
+        {
+            SqlDataSource1.SelectCommand = "SELECT [ProductId], [ImgUrl], [ProductPrice], FORMAT(ProductPrice, 'C', 'sv-SE') AS RoundedPrice, [ProductName] FROM [Product] WHERE ([ProductCategoryId] = @ProductCategoryId) ORDER by ProductName";
+        }
+
+        protected void SortByPrice_Click(object sender, EventArgs e)
+        {
+            SqlDataSource1.SelectCommand = "SELECT [ProductId], [ImgUrl], [ProductPrice], FORMAT(ProductPrice, 'C', 'sv-SE') AS RoundedPrice, [ProductName] FROM [Product] WHERE ([ProductCategoryId] = @ProductCategoryId) ORDER by ProductPrice";
+        }
+
+        protected void SortByBrand_Click(object sender, EventArgs e)
+        {
+            SqlDataSource1.SelectCommand = "SELECT [ProductId], [ImgUrl], [ProductPrice], FORMAT(ProductPrice, 'C', 'sv-SE') AS RoundedPrice, [ProductName] FROM [Product] WHERE ([ProductCategoryId] = @ProductCategoryId) ORDER by ProductBrandId";
         }
     }
 }

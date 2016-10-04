@@ -1,6 +1,7 @@
 ﻿body {
     background-color: #f5f0e9;
-    font: normal, 13px, Tahoma,Arial, Helvetica, sans-serif;
+    font-family: Tahoma,Arial, Helvetica, sans-serif;
+    font-size: 13px;
     color: #44433b;
 
     width:940px;
@@ -13,8 +14,9 @@
 }
 
 h1 {
+    font-family: 'Fjalla One', sans-serif;
     color: #593b0d;
-    font-size: 30px;
+    font-size: 35px;
 }
 .header-banner{
     display:flex;
@@ -39,7 +41,7 @@ header{
 }
     #header-top-nav{
         display:flex;
-        align-items:baseline;
+        /*align-items:baseline;*/
         justify-content: space-between;
         padding:15px;
 
@@ -93,12 +95,12 @@ header{
     color: #504332;
 }
 #Search{
-    color:#484644;
-    background:none;
-    border: thin;
-    border-color: #504332;
+    color:#ffffff;
+    background:#c07a0e;
+    height:20px;
+    border-color: transparent;
     border-style: solid;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 /*FOOTER*/
@@ -184,12 +186,20 @@ footer{
 #product-details-container figure{
     align-items: flex-start;
 }
-.product-details-img-small{
+.switch{
     width:100px;
     height:auto;
 
-    padding-bottom:15px;
+    margin-bottom: 15px;
+    border:2px solid rgba(122, 84, 38, 0.00);
 }
+img.switch:hover{
+    border:2px solid rgba(122, 84, 38, 0.40);
+}
+img.switch:active{
+    border:2px solid rgba(122, 84, 38, 0.80);
+}
+
 .slides {
     display:none
 
@@ -218,7 +228,6 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-
 #product-details-specs-section select{
         width: 277px;
         height:37px;
@@ -228,7 +237,7 @@ footer{
         padding: 7px 10% 7px 8px;
         
 }
-#product-details-specs-section input[type=submit]{
+input#ContentPlaceHolder_DataList1_btn_addToCart_0{
         width: 277px;
         height:37px;
         letter-spacing:.1em;
@@ -236,7 +245,12 @@ footer{
         padding: 7px 10% 7px 8px;
         border:none;
         cursor:pointer; 
-        background-color:lightgreen;
+        background-color:#685235;
+       
+
+}
+section#product-details-specs-section {
+    margin-left: 45px;
 }
 #product-details-specs-section div{
     margin-top:10px;
@@ -248,117 +262,6 @@ footer{
 input#ContentPlaceHolder_txt_email,
 input#ContentPlaceHolder_txt_fullname {
     width: 100%;
-}
-
-/*CART.ASPX*/
-#CartMainbody{
-    width:98%; 
-    padding:10px 10px 
-}
-#Pannelbody{
-    height:300px; 
-    width:100%;
-    border: 1px solid black; 
-    margin-top: 10px;
-}
-#TabBild{
-    text-align:left;
-}
-
-#TabArt{
-    text-align:left; width:70%;
-}
-
-#TabAnt{
-    text-align:left
-}
-#TabPris{
-    text-align:left
-}
-#TabBort{
-    text-align:left
-}
-
-.ProdImage{
-    text-align:left;
-}
-.ProdDetails{
-    text-align:left; 
-}
-.ProdAmount{
-    text-align:left;
-}
-.ProdPrice{
-    text-align:left; 
-}
-.ProdRemove{
-    text-align:center; 
-}
-
-#Pannelsumma{
-    height:90px ; width:100%;border: 1px solid black; margin-top: 10px;
-}
-#ShowCash{
-    width:30%; float:right;
-}
-#RowOfDeliveries{
-    height:125px ; width:100%;border: 1px solid black; margin-top: 10px;
-}
-.pading{
-    padding:10px;
-}
-.RowChoise{
-
-}
-.ChoiseInfo{
-    float:left; 
-    width:50%;
-    border: 1px solid black;
-    height:50px;
-}
-.ChoisePrice{
-    float:right; width:49%;
-}
-#FinnalBuy{
-    height:600px; width:100%;border:1px solid black; margin-top: 10px;
-}
-#cardpayrow{
-    height:170px ;border:1px solid black;  margin-bottom:10px;
-}
-#Internetbankapay{
-    height:170px; border:1px solid black;  margin-bottom:10px;
-}
-#Fakturapay{
-    border:1px solid black;  margin-bottom:10px;
-}
-.HalfRowLeft{
-    float:left; width:50%;
-}
-´#HalfRowRight{
-    float:right; width:50%;
-}
-.FullRow{
-    width:100%;
-}
-.BMargin{
-    margin-bottom:10px
-}
-.BmarginFloatL{
-    margin-bottom:10px; float:left;
-}
-.postnr{
-    width:40px;
-}
-
-
-/*TESTING.ASPX*/
-<<<<<<< HEAD
-.ProductsPanel img{
-    border:1px solid black;
-}
-=======
-#ProductsPanel{
-    background-color:blue;
 }
 
 /*Product list pages - sneakers,boots...*/
@@ -374,16 +277,85 @@ input#ContentPlaceHolder_txt_fullname {
      width:180px;
      height:auto;
      text-align: center;
-     background-color:white;
+     background-color:#f9f9f9;
 
      padding:10px;
      margin-right:35px;
      
      margin-bottom:35px;
+
+}
+.product-list-container a{
+    color:black;
+    text-decoration:none;
+}
+.product-list-container:hover a{
+    color:sandybrown;
 }
 .product-list-container img{
      width:180px;
      height:auto;
 }
 
->>>>>>> premaster
+.sort{
+    float: left;
+    margin-bottom: 10px;
+    
+}
+
+
+/*CART.ASPX*/
+table#ContentPlaceHolder_GridView1 {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+#cart-options-section{
+
+    display:flex;
+    justify-content:space-around;
+    margin: 25px 0;
+}
+.h2-center{
+    text-align:center;
+}
+
+h1, h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #593b0d;
+    font-size: 35px;
+}
+
+.icon-text{
+    padding-bottom:5px;
+}
+
+input#ContentPlaceHolder_DataList1_btn_addToCart_0{
+    background-color:#c07a0e;
+    
+}
+
+input#SearchBoxID{
+    background-color:transparent;
+    border:1px solid #504332;
+    height:18px
+}
+a:link{
+color:#44433b;
+}
+.form{
+  background-color:transparent;
+    border:1px solid #504332;
+    height:18px;
+    margin:5px;
+}
+.form-send{
+    color:#ffffff;
+    background:#c07a0e;
+    height:20px;
+    border-color: transparent;
+    border-style: solid;
+    font-size: 13px;
+    margin:15px;
+   
+}
