@@ -18,6 +18,16 @@ h1 {
     color: #593b0d;
     font-size: 35px;
 }
+h3 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #593b0d;
+}
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #593b0d;
+    font-size: large;
+    font-weight: 500;
+}
 .header-banner{
     display:flex;
     justify-content:center;
