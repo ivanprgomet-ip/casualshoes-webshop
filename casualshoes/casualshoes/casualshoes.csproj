@@ -227,6 +227,8 @@
     <Content Include="pages\ProductDetails.aspx" />
     <Content Include="pages\SignUp.aspx" />
     <Content Include="pages\ConfirmedBuy.aspx" />
+    <Content Include="pages\404.aspx" />
+    <Content Include="pages\Error.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -369,6 +371,20 @@
     </Compile>
     <Compile Include="pages\ConfirmedBuy.aspx.designer.cs">
       <DependentUpon>ConfirmedBuy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
