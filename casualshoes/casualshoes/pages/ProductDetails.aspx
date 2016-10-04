@@ -7,7 +7,7 @@
             <asp:Label ID="lbl_addToCartMsg" runat="server" Text=""></asp:Label>
         </div>
         <div>
-            <asp:Label ID="Label4" runat="server" Text="Storlek:"></asp:Label>
+            <asp:Label ID="Label4" runat="server" Text="Storlek:" CssClass="SizeLabel"></asp:Label>
             </div>
         <div>
             <asp:DropDownList ID="ddl_modelsize" runat="server" CssClass="SizeDDL">
@@ -21,7 +21,7 @@
             </asp:DropDownList>
         </div>
         <div>
-            <asp:Label ID="Label1" runat="server" Text="Antal:"></asp:Label>
+            <asp:Label ID="Label1" runat="server" Text="Antal:" CssClass="QuantityLabel"></asp:Label>
             </div>
         <div>
             <input type="number" id="num_quantity" min="1" max="10" value="1" runat="server" class="QuantityInput" />
@@ -52,7 +52,7 @@
                 </section>
                 <section id="product-details-specs-section">
                     <div>
-                        <asp:DataList ID="BrandImg" runat="server" DataSourceID="SqlDataSource2">
+                        <asp:DataList ID="BrandImg" runat="server" DataSourceID="SqlDataSource2" CssClass="ProductBrandImg">
                             <ItemTemplate>
                                 <img src='<%#Eval("ImgUrl") %>b.png' class="product-brand-img" />
                             </ItemTemplate>
