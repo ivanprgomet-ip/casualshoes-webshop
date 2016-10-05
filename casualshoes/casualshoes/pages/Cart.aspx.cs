@@ -48,18 +48,40 @@ namespace casualshoes
             //går ej betälla med tom varukorg
             if (GridView1.Rows.Count > 0)
             {
-                ClearTheGridview();//and also from database?
+                //------------------------------------------------------------------------------------------------------------
+                string orderid = (Session["orderid"]).ToString();
+                AddToConfirmedOrderDetails(orderid);//transfer from orderdetail table to confirmed detail
+                //------------------------------------------------------------------------------------------------------------
+                ClearTheGridview();//Deletes all data from the gridview and database table OrderDetail
+                //------------------------------------------------------------------------------------------------------------
                 Response.Redirect("~/pages/ConfirmedBuy.aspx");
             }
             else
                 lbl_cartMsg.Text = "Det går ej att beställa med en tom varukorg!";
         }
 
+        private void AddToConfirmedOrderDetails(string orderId)
+        {
+            //Add All the values from the gridview into the ConfirmedOrderDetailTable
+            string sqlQuery = string.Format(@"INSERT INTO ConfirmedOrderDetail (OrderId, ProductId, Quantity, ModelSize)
+                                              SELECT OrderId, ProductId, Quantity, ModelSize
+                                              FROM OrderDetail
+                                                WHERE OrderId = {0}", orderId);
+            Connection.comm.CommandText = sqlQuery;
+            try
+            {
+                Connection.conn.Open();
+                Connection.comm.ExecuteNonQuery();
+            }
+            finally
+            {
+                Connection.conn.Close();
+            }
+        }
         protected void Button1_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/pages/Home.aspx");
         }
-
         protected void ClearTheGridview()
         {
             for (int i = 0; i < GridView1.Rows.Count; i++)
