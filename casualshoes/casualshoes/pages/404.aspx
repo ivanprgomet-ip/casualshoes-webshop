@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
 
    <h1>Page not found</h1>
-    Page not found.Please return to <a href="Home.aspx"> Home page </a>
+    Page not found.Please return to <a href="Home.aspx"> Home page </a><br/><br/>
 
 
 </asp:Content>
