@@ -48,7 +48,12 @@ namespace casualshoes
             //går ej betälla med tom varukorg
             if (GridView1.Rows.Count > 0)
             {
-                ClearTheGridview();//and also from database?
+                //------------------------------------------------------------------------------------------------------------
+                string orderid = (Session["orderid"]).ToString();
+                ConfirmedOrderDetailDAL.AddToConfirmedOrderDetails(orderid);//transfer from orderdetail table to confirmed detail
+                //------------------------------------------------------------------------------------------------------------
+                ClearTheGridview();//Deletes all data from the gridview and database table OrderDetail
+                //------------------------------------------------------------------------------------------------------------
                 Response.Redirect("~/pages/ConfirmedBuy.aspx");
             }
             else
@@ -59,7 +64,6 @@ namespace casualshoes
         {
             Response.Redirect("~/pages/Home.aspx");
         }
-
         protected void ClearTheGridview()
         {
             for (int i = 0; i < GridView1.Rows.Count; i++)

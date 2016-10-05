@@ -20,11 +20,11 @@ namespace casualshoes.data_access_layer
                 Connection.comm.CommandText = insertOrderDetailQuery;
                 Connection.conn.Open();
                 Connection.comm.ExecuteNonQuery();
-                return "Produkten har lagts till i kundkorgen!";
+                return "Produkten har lagts till i varukorgen!";
             }
             catch (Exception)
             {
-                return "Produkten har INTE lagts till i kundkorgen!";
+                return "Produkten har INTE lagts till i varukorgen!";
             }
             finally
             {

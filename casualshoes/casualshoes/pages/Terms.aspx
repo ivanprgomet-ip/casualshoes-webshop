@@ -7,39 +7,39 @@
 
         <p>Observera att du måste ha målsmans tillstånd för att handla från CasualShoes AB om du är under 18 år. Alla varor förblir CasualShoes ABs egendom till dess fulla betalning kommit bolaget tillhanda. CasualShoes AB förbehåller sig rätten att häva ett köp om bedrägeri misstänks.</p>
 
-        <h3>Vad kostar frakten?</h3>
+        <h2>Vad kostar frakten?</h2>
 
         <p><strong>Inget!</strong> Hos oss beställer du <strong>alltid fraktfritt</strong> oberoende av storleken på din order. Du har även möjligheten att kostnadsfritt <strong>byta och returnera</strong> din beställning.</p>
 
-        <h3>När kommer min beställning?</h3>
+        <h2>När kommer min beställning?</h2>
 
         <p>Lägger du din order innan kl.13.00 på vardagar skickas den samma dag. <strong>Leveranstiden är på 1-3 arbetsdagar.</strong> Leveranstiden kan variera på var i landet du bor.</p>
 
-        <h3>Var är exakt mitt paket?</h3>
+        <h2>Var är exakt mitt paket?</h2>
 
         <p>Spåra din beställning via <a href="http://www.posten.se/" target="_blank">PostNord.se</a> för att se var din beställning befinner sig just nu. Ange de kollinummer som du fick i leveransmailet som skickades till dig i samband med att du lade din order .</p>
 
-        <h3>Hur vet jag när mitt paket har kommit till mitt serviceställe?</h3>
+        <h2>Hur vet jag när mitt paket har kommit till mitt serviceställe?</h2>
 
         <p>Du får ett sms till mobilnumret du angav i din beställning som talar om var ditt paket kan hämtas ut samt ditt kollinummer. Använd kollinumret för att hämta ut ditt paket. Du behöver alltid legitimera dig vid uthämtning av paket. Det är bara personen som lagt beställningen som kan hämta ut paketet. Kollinumret som du fick i ditt leveransbekräftelsemail kan du också använda för att spåra ditt paket på PostNords hemsida.</p>
 
-        <h3>Borde ditt paket ha anlänt till servicesstället men du har inte mottagit någon sms-avisering?</h3>
+        <h2>Borde ditt paket ha anlänt till servicesstället men du har inte mottagit någon sms-avisering?</h2>
 
         <p>Ingen fara, anledningen till detta oftast att mobilnumret skrivits in felaktigt i samband med beställningen. Använd dig av kollinumret för att hämta ut din order på servicestället. Kollinumret fick du i ditt leveransbekräftelsemail.</p>
 
         <p><strong>Paketet levereras alltid till närmaste serviceställe. </strong></p>
 
 
-        <h3>Är ditt paket skadat?</h3>
+        <h2>Är ditt paket skadat?</h2>
 
         <p>Är paketet och/eller innehållet skadat när du får det, anmäl det genast på servicestället. Så hjälper personalen dig med hur du ska gå tillväga.</p>
 
 
-        <h3>Jag har inte hämtat ut mitt paket. Vad händer nu?</h3>
+        <h2>Jag har inte hämtat ut mitt paket. Vad händer nu?</h2>
 
         <p><strong>För alla paket som inte hämtas ut inom 14 dagar debiterar CasualShoes kunden en avgift på 300 kr.</strong> Avgiften motsvarar de faktiska kostnaderna för returfrakt, expeditionsavgift och hantering. Betalningsvillkor är 30 dagar. Vid försenad betalning utgår påminnelseavgift (det belopp som är tillåtet enligt lag f.n. 50 kr) samt dröjsmålränta och ev. inkassokostnader. Om du ångrat dig när paketet har skickats från oss måste du hämta ut paketet på ditt serviceställe och skicka tillbaka det till oss med kundreturen alternativt att du kontaktar oss och talar om att du inte har möjlighet att hämta ut paketet.</p>
 
-        <h3>Prova dina nya kläder!</h3>
+        <h2>Prova dina nya kläder!</h2>
 
         <p>Prova dina plagg och tänk på att det är viktigt att du är försiktig med deodorant, smink och parfymer. Vill du returnera plagget till oss måste plagget vara i originalskick, med alla etiketter kvar, fria från dofter och fläckar.</p>
 

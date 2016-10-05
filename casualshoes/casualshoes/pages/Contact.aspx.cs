@@ -17,27 +17,7 @@ namespace casualshoes
         {
 
         }
-        //TODO: FIX bug unobtrusive validation mode error in this code
-        //protected void btn_sendMail_Click(object sender, EventArgs e)
-        //{
-
-
-        //    if (Page.IsValid==true)
-        //    {
-        //        using (MailMessage message = new MailMessage(txt_email.Text.ToString(),"dalius_pamparas@gmail.com","this is a subject by "+txt_fullname.Text,txt_comments.Text))
-        //        {
-        //            SmtpClient client = new SmtpClient();
-        //            client.Host = "smtp.gmail.com";
-        //            client.Send(message);
-        //        }
-        //        lbl_sentMessage.Text = $"Tack {txt_fullname.Text}, vi ska svara så snabt som möjligt";
-        //    }
-        //    else
-        //    {
-        //        lbl_sentMessage.Text = "Du har inte fyllt i formuläret fullständigt!";
-        //    }
-
-        //}
+       
         
         public void btnSend_Click1(object sender, EventArgs e)
         {
