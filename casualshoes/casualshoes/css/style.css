@@ -221,20 +221,22 @@ footer{
     min-height:60vh; /*todo: fix this solution*/
 }
 #product-details-container figure{
-    align-items: flex-start;
+    /*align-items: flex-start;*/
+    /*background-color: #f9f9f9;*/ /*a small hack...*/
+    margin:5px;
 }
 .switch{
     width:100px;
     height:auto;
 
     margin-bottom: 15px;
-    border:2px solid rgba(122, 84, 38, 0.00);
+    border: 1px solid rgba(122, 84, 38, 0.2);
 }
 img.switch:hover{
-    border:2px solid rgba(122, 84, 38, 0.40);
+        border: 1px solid rgba(122, 84, 38, 0.4);
 }
 img.switch:active{
-    border:2px solid rgba(122, 84, 38, 0.80);
+        border: 1px solid rgba(122, 84, 38, 0.8);
 }
 
 .slides {
@@ -243,8 +245,7 @@ img.switch:active{
 }
 .product-details-img-large{
     width:500px;
-
-    padding-left:15px;
+    border: 1px solid rgba(122, 84, 38, 0.2);
 }
 #product-details-images-section{
     display:flex;
