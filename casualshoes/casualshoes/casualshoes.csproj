@@ -246,6 +246,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="data_access_layer\Admin.cs" />
+    <Compile Include="data_access_layer\ConfirmedOrderDetailDAL.cs" />
     <Compile Include="data_access_layer\Connection.cs" />
     <Compile Include="data_access_layer\OrderDetailDAL.cs" />
     <Compile Include="data_access_layer\OrderHeadDAL.cs" />
